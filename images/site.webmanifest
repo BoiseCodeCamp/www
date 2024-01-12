@@ -1,0 +1,14 @@
+{
+    "name": "CodeWorks Hack-0-Ween 23",
+    "short_name": "CodeWorks Hackathon",
+    "icons": [
+        {
+            "src": "/images/android-chrome-192x192.png",
+            "sizes": "192x192",
+            "type": "image/png"
+        }
+    ],
+    "theme_color": "#000000",
+    "background_color": "#000000",
+    "display": "standalone"
+}

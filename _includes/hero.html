@@ -1,0 +1,14 @@
+<section class="hero bg-black">
+  <div class="wrapper text-center">
+    <img class="hero-img" src="{{ site.event.image }}" alt="event image" />
+    <h1 rel="title" class="text-theme">{{ site.event.name }}</h1>
+    <h2 rel="description" class="text-compliment">{{ site.event.subtitle }}</h2>
+    <h3 rel="location" class="text-light">{{ site.event.date }} &mdash; {{ site.event.location }}</h3>
+    <hr>
+    <div class="buttons">
+      {% for link in site.event.hero.links %}
+      <a href="{{ link.href }}">{{ link.text }}</a>
+      {% endfor %}
+    </div>
+  </div>
+</section>
