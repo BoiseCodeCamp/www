@@ -1,2 +1,0 @@
-ARG VARIANT="2.7.0"
-FROM ruby:${VARIANT}
