@@ -11,12 +11,12 @@
               {{ event.location }}
             </h3>
             <div class="cta mt-3">
-              <a class="btn btn-lg btn-outline-info">
+              <router-link :to="{ name: 'Register' }" class="btn btn-lg btn-outline-info">
                 <span class="me-2">Register Now</span>
                 <small>
                   <i class="mdi  mdi-chevron-right"></i>
                 </small>
-              </a>
+              </router-link>
             </div>
           </div>
         </div>

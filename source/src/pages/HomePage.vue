@@ -9,10 +9,12 @@
         </div>
       </div>
       <About />
-      <hr />
+      <RegisterButton show-form title="Register to attend" />
+      
       <Speakers />
-      <hr />
+      
       <Experience />
+      <RegisterButton title="Doesn't this sound great? Reserve your spot now!" />
       <hr />
       <Venue />
       <div class="row mb-5 home-sponsors" v-if="sponsors.length">
@@ -37,6 +39,7 @@
         </div>
       </div>
     </section>
+    <RegisterButton title="Don't wait to sign up, your next big move is waiting!" class="mb-0" />
     <Foot />
   </div>
 </template>
@@ -50,7 +53,7 @@ export default {
   setup() {
     return {
       sponsors: computed(() => AppState.sponsors)
-    }
-  }
+    };
+  },
 };
 </script>

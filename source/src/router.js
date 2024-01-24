@@ -9,6 +9,16 @@ const routes = [
     path: '/',
     name: 'Home',
     component: loadPage('HomePage')
+  },
+  {
+    path: '/register',
+    name: 'Register',
+    component: loadPage('RegisterPage')
+  },
+  {
+    path: '/thank-you',
+    name: 'ThankYou',
+    component: loadPage('ThankYouPage')
   }
 ]
 

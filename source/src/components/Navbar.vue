@@ -62,7 +62,7 @@
         </li>
         <li class="nav-item">
           <a
-            href="https://sessionize.com/boisecodecamp-2024/"
+            :href="cfs"
             target="_blank"
             rel="noopener"
             title="call for speakers"
@@ -74,7 +74,7 @@
         </li>
         <li class="nav-item">
           <a
-            href="/sponsor-packet/"
+            href="/sponsor-packet/index.html"
             target="_blank"
             rel="noopener"
             class="nav-link text-uppercase"
@@ -90,6 +90,8 @@
 </template>
 
 <script>
+import { AppState } from '../AppState.js';
+
 export default {
   mounted() {
     window.addEventListener("scroll", this.onScroll);
@@ -99,6 +101,7 @@ export default {
   },
   data() {
     return {
+      cfs: AppState.cfs,
       mobile: false,
       scrolled: false,
       links: [

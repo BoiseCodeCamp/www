@@ -1,5 +1,5 @@
 <template>
-  <footer class="mt-5">
+  <footer class="">
     <div class="container-fluid pt-5 text-center bg-theme-dark text-light">
       <div class="d-flex justify-content-around flex-wrap align-items-baseline">
         <div class="pb-3">

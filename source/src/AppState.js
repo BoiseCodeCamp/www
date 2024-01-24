@@ -7,6 +7,7 @@ import collage from './assets/img/codecamp-collage.png'
 export const AppState = reactive({
   STORAGE_KEY: 'BOISECODECAMP24',
   SESSIONIZE_KEY: 'dsz67efb',
+  cfs: 'https://sessionize.com/boise-code-camp-2024/',
   currentYear: "2024",
   event: {
     name: "Boise CodeCamp",
@@ -14,14 +15,14 @@ export const AppState = reactive({
     dTime: new Date("2024-05-04 8:30"),
     location: "Boise, Id",
     venue: "CodeWorks",
-    address: "8455 Westpark St, Boise, ID 83704"
+    address: "8455 Westpark St, Boise, ID 83704",
+    snippet: 'Code Camp is a free event for developers, hardware geeks, and the curious to come and learn from their peers. Sessions range from native languages to the clouds and much more.'
   },
   about: [
     {
       title: 'About CodeCamp',
       img: aboutImg,
-      description: `Code Camp is a free event for developers, hardware geeks, and the curious to come and learn from their peers. We will have a full day worth of sessions ranging from databases, the latest development languages, mobile technologies, and much more.
-      `
+      description: 'Code Camp is a free event for developers, hardware geeks, and the curious to come and learn from their peers. We will have a full day worth of sessions ranging from databases, the latest development languages, mobile technologies, and much more.'
     },
     {
       title: 'Why Boise',

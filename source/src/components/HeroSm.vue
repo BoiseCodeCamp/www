@@ -1,7 +1,7 @@
 <template>
   <div class="hero">
     <header class="container-fluid bg-dark p-5">
-      <div class="row h-100 align-items-center text-shadow">
+      <div class="row align-items-center text-shadow">
         <div class="col offset-lg-1 col-lg-4">
           <div class="text-light">
             <img
@@ -34,12 +34,12 @@ export default {
 };
 </script>
 
-<style>
+<style scoped lang="scss">
 header {
   background-image: url(../assets/img/codecamp-header-bg.png);
   background-position: center;
   background-size: cover;
-  height: 67vh;
+  height: 47vh;
   font-size: 16pt;
 }
 </style>
