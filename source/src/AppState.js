@@ -1,4 +1,7 @@
 import { reactive } from 'vue'
+import aboutImg from './assets/img/codecamp-boise.png'
+import collage from './assets/img/codecamp-collage.png'
+
 
 // NOTE AppState is a reactive object to contain app level data
 export const AppState = reactive({
@@ -16,7 +19,7 @@ export const AppState = reactive({
   about: [
     {
       title: 'About CodeCamp',
-      img: 'img/codecamp-boise.png',
+      img: aboutImg,
       description: `Code Camp is a free event for developers, hardware geeks, and the curious to come and learn from their peers. We will have a full day worth of sessions ranging from databases, the latest development languages, mobile technologies, and much more.
       `
     },
@@ -31,7 +34,7 @@ Boise is consistently ranked most popular places to live with its people-friendl
     },
     {
       title: 'Youth Track',
-      img: 'img/codecamp-collage.png',
+      img: collage,
       description: `Do you have young coders? Are you a young person interested in technology? Boise Code Camp has an all-day track of coding and technology sessions aimed at youth ages 6 to 16. In the last year, millions of kids, many of them in our own community, have learned to code with the Hour of Code and tools like Scratch and Raspberry Pi. Boise Code Camp is representative of our community and the kids in our community are starting to code.
 
 The youth track is for the novice or experienced kid coder. In our Scratch sessions, new coders will find a very approachable platform and participants in the Hour of Code will find a very familiar interface style. Experienced coders will find challenging material for building a web site or can even sneak into an adult focused javscript or robotics session and learn what it's like to be a professional programmer. Also, what kid doesn't want to learn how to hack Minecraft and hang out with other kids who are also interested in technology?

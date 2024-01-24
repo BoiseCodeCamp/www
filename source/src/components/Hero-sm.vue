@@ -6,7 +6,7 @@
           <div class="text-light">
             <img
               class="img-fluid mb-3"
-              src="img/codecamp-words.png"
+              src="../assets/img/codecamp-words.png"
               alt="codecamp words"
             />
             <h3 class="text-shadow mt-3">
@@ -36,7 +36,7 @@ export default {
 
 <style>
 header {
-  background-image: url(/img/codecamp-header-bg.png);
+  background-image: url(../assets/img/codecamp-header-bg.png);
   background-position: center;
   background-size: cover;
   height: 67vh;

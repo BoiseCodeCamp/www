@@ -4,7 +4,7 @@
       <div class="row h-100 align-items-center text-shadow">
         <div class="col offset-lg-1 col-lg-4">
           <div class="text-light">
-            <img class="img-fluid mb-3" src="img/codecamp-words.png" alt="codecamp words" />
+            <img class="img-fluid mb-3" src="../assets/img/codecamp-words.png" alt="codecamp words" />
             <h3 class="text-shadow mt-3">
               {{ event.date }}
               <span class="ms-md-3 me-md-3">|</span>
@@ -53,7 +53,7 @@ export default {
 
 <style scoped>
 header {
-  background-image: url(/img/codecamp-header-bg.png);
+  background-image: url(../assets/img/codecamp-header-bg.png);
   background-position: center;
   background-size: cover;
   height: 87vh;

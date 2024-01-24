@@ -27,7 +27,7 @@
       <div class="col-12 col-lg-6 offset-lg-1 order-1 order-lg-2 text-center">
         <img
           class="img-fluid mb-4 mb-lg-0 text-shadow rounded"
-          src="img/venue.jpg"
+          src="../assets/img/venue.jpg"
           alt="Venue"
         />
       </div>
@@ -36,7 +36,7 @@
       <div class="col-12 col-lg-6 offset-lg-1 text-center mb-3">
         <img
           class="img-fluid mb-4 mb-lg-0 text-shadow rounded"
-          src="img/codecamp-lunch.jpg"
+          src="../assets/img/codecamp-lunch.jpg"
           alt="Venue"
         />
       </div>
