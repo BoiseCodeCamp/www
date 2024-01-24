@@ -1,0 +1,195 @@
+# --------------
+# -- Settings --
+# --------------
+
+# If you hosting as a root, for example: https://[github username].github.io, then leave it blank
+baseurl: ""
+
+# If you're using GitHub pages without a custom domain, this is "https://[github username].github.io"
+# If you're using GitHub pages with a custom domain, this is "http://[your domain]" (or https if you're using SSL)
+url: "https://boisecodecamp.com"
+
+# The ability to use custom themes.
+style:
+  theme: "original"
+
+# This will help you track who's visiting your website.
+tracking:
+  google_analytics: "UA-68420293-1"
+
+# Let people connect & engage with you through social media.
+social:
+  twitter_handle: "boisecodecamp"
+
+# This is Search Engine Optimization. It'll help your website look better on search.
+seo:
+  title:       "Boise Code Camp | May 4, 2024"
+  description: "We're back!!!"
+  image:       "/images/hackoween_23.jpg"
+
+# Event information.
+event:
+  name:        "Unleash Halloween with OpenAI"
+  image:       "images/cover.png"
+  subtitle: "Embrace the eerie and mysterious side of AI in this Hack-0-Ween Challenge"
+  date:        "May 4, 2024"
+  location:    "Boise, ID, United States"
+  rules: |
+    - **Team Size:** Teams can consist of 1 to 4 members. Collaboration is encouraged to combine diverse skills and perspectives.
+    - **Project Initiation:** All projects must be initiated on the day of the event. To ensure a level playing field, participants are not allowed to pre-game or work on their projects before the official start time.
+    - **Project Categories:** Participants have the flexibility to choose from various project categories, including software applications, physical prototypes, IoT devices, chatbots, or wearable technology. However, all projects must align with the spooky Halloween theme.
+    - **Use of OpenAI:** Participants are encouraged to integrate OpenAI technology into their projects to enhance functionality and intelligence. The use of OpenAI language models is not mandatory but highly recommended.
+    - **Spooky Theme:** The hallmark of this hackathon is the spooky theme. All projects, costumes, or bots must incorporate elements related to Halloween. This could involve ghostly visuals, eerie sounds, or content that evokes the spirit of the season.
+    - **Project Secret:** During the opening ceremony, a secret element or requirement related to the spooky theme will be revealed to all participants. All projects must incorporate this secret element in some unique way.
+    - **Project Presentation:** Teams will have a designated time to present their projects to the judging panel. Presentations should include a demonstration of the project's functionality, and how it integrates the revealed secret.
+    - **Code of Conduct:** Participants are expected to maintain a respectful and inclusive environment throughout the hackathon. Any form of discrimination, harassment, or disruptive behavior will not be tolerated.
+    - **Intellectual Property:** Participants retain ownership of their project's intellectual property. However, organizers may request the use of project details for promotional purposes.
+    - **Submission Deadline:** All projects must be submitted before the specified deadline at the end of the hackathon. Late submissions may not be considered for judging.
+
+  hero:
+    links:
+      - text: "The Hack-0-Ween Secret"
+        href: "https://hackoween_secret_23.codeworksacademy.com"
+
+  about:
+    description: |
+      > Calling all tech enthusiasts, developers, and creative minds to come create a spine-chilling project harnessing the AI Overlords.
+
+      The SpookyTech Hackathon is a unique and immersive event that challenges participants to incorporate OpenAI technology into their Halloween-themed projects, costumes, or bots. Whether you're a seasoned developer or a novice coder, this event promises a ghoulishly good time filled with innovation, creativity, and the opportunity to learn and experiment with cutting-edge AI.
+
+
+
+  # Info Sections
+  info:
+    sections:
+      - image: "images/image2.png"
+        title: "OpenAI Integration"
+        description: |
+          Participants are encouraged to use OpenAI's powerful language models to add a touch of intelligence to their Halloween-themed creations. From chatbots that tell ghost stories to AI-powered costume recommendations, the possibilities are endless.
+      - image: "images/image1.png"
+        title: "Spooky Themes"
+        description: |
+          We're looking for projects, costumes, and bots that embrace the spirit of Halloween. Think haunted houses, ghostly apparitions, witches' spells, and everything eerie and enchanting.
+      - image: "images/image3.png"
+        title: "Thrilling Prizes"
+        description: |
+          Compete for a chance to win exciting prizes, including tech gadgets, online course subscriptions, and more. Our judges will evaluate projects based on creativity, technical prowess, and adherence to the spooky theme.
+      - image: "images/image4.png"
+        title: "Collaboration and Learning"
+        description: |
+          Connect with fellow tech enthusiasts, learn from experienced mentors, and expand your network within the tech community. The SpookyTech Hackathon is a fantastic opportunity to collaborate and grow your skills.
+
+  judging:
+    subtitle: Projects will be graded in 5 categories; Each category will be awarded 1-5 points.
+    description: |
+      - **Creativity:** The uniqueness and creativity of the project. Is this project we have seen before? A familiar project with an interesting twist or something truly unique.
+      - **Technical Excellence:** The technical prowess and complexity of the project including it's implementations of other technologies and assets.
+      - **Presentation:** The clarity, effectiveness, enthusiasm and overall polish displayed during the project presentation. Presentations should cover the core features of the project in a clear and engaging way.
+      - **Adherence to Theme:** How well the project aligns with the theme and captures the essence of the hackathon. The incorporation of any revealed secrets.
+      - **User Experience:** How does this project maintain user engagement. Could it's features could be used practically? What is the general user experience while using the project?
+
+  # Sponsors
+
+  sponsors:
+    - name: CodeWorks
+      image: https://bcw.blob.core.windows.net/public/img/8600856373152463
+      url: https://boisecodeworks.com
+    - name: Allata
+      image: images/allata.png
+      url: https://www.allata.com/
+    - name: BSDG
+      image: images/bsdg-logo.jpg
+      url: https://www.linkedin.com/groups/14302958/
+    - name: Joel Steudler
+      image: images/joel.png
+      url: https://joelsteudler.itch.io/
+    - name: Slant 3D
+      image: images/slant3d.png
+      url: https://www.slant3d.com/
+    - name: Idaho Tech Council
+      image: images/itc.png
+      url: https://idahotechcouncil.org
+    - name: Pad Dash
+      image: images/paddash.png
+      url: https://paddash.com/
+    - name: GDG Boise
+      image: images/gdg_boise.png
+      url: https://gdg.community.dev/gdg-boise/
+    - name: JetBrains
+      image: https://resources.jetbrains.com/storage/products/company/brand/logos/jb_beam.svg
+      url: https://jb.gg/studentlicense
+
+  swag_tag: From stickers, shirts and snacks... Take a sneak peak at some of the haunted items
+  swag:
+    - name: Secret Event sticker and shirt
+      image: images/secret_shirt.png
+    - name: CodeWorks Swag
+      image: images/codeworks_swag.png
+    - name: Spooky Sticks
+      image: images/spooky-sticks.jpg
+
+
+  # Agenda
+  agenda:
+    - time: 5:00 PM
+      title: Friday Evening - Event Kickoff 🎃
+      description: Be sure to tune into the virtual event kickoff where the secret of the hackathon is going to be revealed to participants.
+    - time: 9:00 AM - 9:45 AM
+      title: Saturday Morning - 🔑 Event Keynote
+      description: Our Keynote presentation presented live at the CodeWorks Office. Attend for some spooky giveaways.
+    - time: 12:00 PM - 1:30 PM
+      title: Lunch Break 🍜 & Costume Awards 🧟
+      description: Take a break from all the hacking and start networking with our sponsors and Participants. Also be prepared to terrify one another with your costumes and cast your votes. 🎟️
+    - time: 1:30 PM - 5:00 PM
+      title: 👻 Spooky Giveaways Challenges
+      description: Be here throughout the day as you work on your projects for a chance to win various mini-games and prizes
+    - time: 8:00 PM - 9:00 PM
+      title: Project Submissions for Judging 😅
+      description: Its time for our esteemed judges to take a look at your project submissions, as each group presents their own work.
+    - time: 9:15 PM - 9:45 PM
+      title: 🎗️ Awards Ceremony
+      description: Our judges will take a few minutes to tally their results and we announce the winners of this Hackathon!!!
+    - time: 9:45 PM - 10:30 PM
+      title: Event Mixer 🧪
+      description: Stay a while to wind down the night before you 🧹fly off to your next event.
+
+
+  # Frequently asked questions.
+  faq:
+    - question: "What is a hackathon?"
+      answer: |
+        A hackathon is an invention marathon. Students come together to build cool
+        software & hardware hacks over 24-48 hours. It's [very beginner friendly](https://medium.com/@tfogo/hackathons-are-for-beginners-77a9c9c0e000#.cj21niskl).
+    - question: "How much does it cost?"
+      answer: |
+        Nothing. Attending a Hackathon is free. Equipment, Swag, and Participation in some events may have required purchases 
+    - question: "Do I need to be a student to attend?"
+      answer: |
+        No. While many students are likely to participate we are open to the community. Often categories of the competition will be split to included student and community prizes.
+    - question: "Where is the event?"
+      answer: |
+        The event is being hosted at CodeWorks. 8455 Westpark Ave, Boise ID 83704
+    - question: "What is CodeWorks?"
+      answer: |
+        CodeWorks provides multi-week educational bootcamps that teach promising students in-demand tech skills. Learn More at [boisecodeworks.com](https://boisecodeworks.com)
+    - question: "Is there a code of conduct?"
+      answer: |
+        Yes there is. We enforce it very strongly. You can [find it here](https://github.com/codeworksacademy/hackathon_code_of_conduct)
+  # This is the message you'll receive once you've registered.
+  register:
+    message: |
+      You'll receive more information closer to the hackathon.
+
+# ----------------------------------------------------
+# -- Ignore this unless you know what you're doing. --
+# ----------------------------------------------------
+
+markdown: GFM
+exclude:
+ - node_modules
+ - gulpfile.js
+ - Gemfile
+ - Gemfile.lock
+ - package.json
+ - README.md
+ - CNAME
