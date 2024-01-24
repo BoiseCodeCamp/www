@@ -15,7 +15,7 @@ jobs:
 
       - name: Build the Client 🏗️
         run: |
-          cd source && npm run build
+          cd source && npm ci && npm run build
 
       - name: Pushes to another repository
         uses: cpina/github-action-push-to-another-repository@main
