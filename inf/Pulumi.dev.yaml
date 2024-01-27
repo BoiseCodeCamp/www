@@ -1,0 +1,5 @@
+config:
+  azure-native:location: westus2
+  bcc-www:errorDocument: error.html
+  bcc-www:indexDocument: index.html
+  bcc-www:path: ../src

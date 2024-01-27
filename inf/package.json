@@ -1,0 +1,12 @@
+{
+    "name": "bcc-www",
+    "devDependencies": {
+        "@types/node": "^18"
+    },
+    "dependencies": {
+        "@pulumi/azure-native": "^2.0.0",
+        "@pulumi/pulumi": "^3.0.0",
+        "@pulumi/synced-folder": "^0.0.9",
+        "typescript": "^4.0.0"
+    }
+}
