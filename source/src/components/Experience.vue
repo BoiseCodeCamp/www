@@ -1,7 +1,7 @@
 <template>
   <div>
-    <div class="row mb-5 ms-3">
-      <div class="col-sm-10">
+    <div class="row mb-5 ms-lg-3">
+      <div class="col-lg-10">
         <div class="h1 mt-3">
           <div>
             Your experience at <span class="text-primary">Boise Code Camp</span>
@@ -21,44 +21,35 @@
     </div>
 
     <div class="row">
-      <div class="col-sm-4">
-        <ul
-          class="text-light p-2 list-group"
-          style="top: 120px; position: sticky;"
-        >
+      <div class="col-lg-4 d-none d-lg-block">
+        <ul class="text-light p-2 list-group" style="top: 120px; position: sticky;">
           <li class="list-group-item">
-            <a href="#architecture-engineering-construction"
-              >
-              <i class="mdi mdi-earth me-1"></i>
-              Web Dev, IoT &amp; AI/Machine Learning</a
-            >
+            <span href="#architecture-engineering-construction">
+              <i class="mdi mdi-robot-happy me-1"></i>
+              Web Dev, IoT &amp; AI/Machine Learning</span>
           </li>
           <li class="list-group-item">
-            <a href="#automotive-transportation-manufacturing"
-              >
-              <i class="mdi mdi-earth me-1"></i>
-              Database Development &amp; Blockchain</a
-            >
+            <span href="#automotive-transportation-manufacturing">
+              <i class="mdi mdi-database me-1"></i>
+              Database Development &amp; Blockchain</span>
           </li>
           <li class="list-group-item">
-            <a href="#games">
-              <i class="mdi mdi-earth me-1"></i>
-              Game Dev, Media &amp; Entertainment</a>
+            <span href="#games">
+              <i class="mdi mdi-controller me-1"></i>
+              Game Dev, Media &amp; Entertainment</span>
           </li>
           <li class="list-group-item">
-            <a href="#cloud">
-              <i class="mdi mdi-earth me-1"></i>
-              Infrastructure, Dev Ops &amp; Cloud</a>
+            <span href="#cloud">
+              <i class="mdi mdi-cloud me-1"></i>
+              Infrastructure, Dev Ops &amp; Cloud</span>
           </li>
         </ul>
       </div>
-      <div class="component-tabs--main col-xs-12 col-sm-7">
+      <div class="component-tabs--main col-xs-12 col-lg-7">
         <div>
           <div>
-            <div
-              class="clearfix component-tab component component-tabs--section component-view-mode-default"
-              id="architecture-engineering-construction"
-            >
+            <div class="clearfix component-tab component component-tabs--section component-view-mode-default"
+              id="architecture-engineering-construction">
               <h2 class="md-m-bottom">
                 <div>Web Dev, IoT &amp; AI/Machine Learning</div>
               </h2>
@@ -66,9 +57,7 @@
               <div class="large">
                 <div>
                   <p>
-                    <strong
-                      >Application Development of the future, Today:</strong
-                    >
+                    <strong>Application Development of the future, Today:</strong>
                   </p>
                   <ul dir="ltr">
                     <li>
@@ -91,10 +80,8 @@
             </div>
           </div>
           <div>
-            <div
-              class="clearfix component-tab component component-tabs--section component-view-mode-default"
-              id="automotive-transportation-manufacturing"
-            >
+            <div class="clearfix component-tab component component-tabs--section component-view-mode-default"
+              id="automotive-transportation-manufacturing">
               <h2 class="md-m-bottom">
                 <div>Database Development &amp; Blockchain</div>
               </h2>
@@ -102,10 +89,8 @@
               <div class="large">
                 <div>
                   <p>
-                    <strong
-                      >Blockchain is a great deal more than virtual currency,
-                      are you using it?</strong
-                    >
+                    <strong>Blockchain is a great deal more than virtual currency,
+                      are you using it?</strong>
                   </p>
                   <ul dir="ltr">
                     <li>
@@ -128,10 +113,7 @@
             </div>
           </div>
           <div>
-            <div
-              class="clearfix component-tab component component-tabs--section component-view-mode-default"
-              id="games"
-            >
+            <div class="clearfix component-tab component component-tabs--section component-view-mode-default" id="games">
               <h2 class="md-m-bottom">
                 <div>Game Dev, Media &amp; Entertainment</div>
               </h2>
@@ -139,10 +121,8 @@
               <div class="large">
                 <div>
                   <p>
-                    <strong
-                      >It's more important than you may think, and you don't
-                      need to be AAA:</strong
-                    >
+                    <strong>It's more important than you may think, and you don't
+                      need to be AAA:</strong>
                   </p>
                   <ul dir="ltr">
                     <li>How to leverage your current skills</li>
@@ -162,10 +142,8 @@
             </div>
           </div>
           <div>
-            <div
-              class="clearfix component-tab component component-tabs--section component-view-mode-default last"
-              id="media-entertainment"
-            >
+            <div class="clearfix component-tab component component-tabs--section component-view-mode-default last"
+              id="media-entertainment">
               <h2 class="md-m-bottom">
                 <div>Infrastructure, Dev Ops &amp; Cloud</div>
               </h2>

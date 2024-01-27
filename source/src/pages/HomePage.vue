@@ -2,24 +2,41 @@
   <div class="home bg-white">
     <Navbar />
     <Hero />
-    <section class="container pl-lg-5 pr-lg-5 bg-white">
+    <section class="container-fluid pl-lg-5 pr-lg-5 bg-white">
       <div class="row">
-        <div class="col-12 col-lg-10 m-auto">
+        <div class="col-lg-10 m-auto">
           <Keynote />
         </div>
       </div>
+    </section>
+
+    <section class="container">
       <About />
-      <RegisterButton show-form title="Register to attend" />
-      
+    </section>
+
+    <section class="container-fluid">
+
+      <div class="row">
+        <RegisterButton show-form title="Register to attend" />
+      </div>
+    </section>
+
+    <section class="container">
       <Speakers />
-      
       <Experience />
-      <RegisterButton title="Doesn't this sound great? Reserve your spot now!" />
+    </section>
+    
+    <section class="container-fluid">
+
+      <div class="row">
+        <RegisterButton title="Doesn't this sound great? Reserve your spot now!" />
+      </div>
       <hr />
       <Venue />
+
       <div class="row mb-5 home-sponsors" v-if="sponsors.length">
         <hr />
-        <div class="col-sm-10">
+        <div class="col-lg-10">
           <div class="h1 mt-3">
             <div>
               Thank you Sponsors
