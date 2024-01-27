@@ -1,5 +1,6 @@
 <template>
   <section class="register">
+    <Navbar />
     <hero-sm />
     <RegisterButton class="mt-0 mb-0" show-form title="Register for Code Camp" />
     <div class="container-fluid pt-5 pl-lg-5 pr-lg-5 bg-white">
@@ -15,26 +16,34 @@
           </article>
         </div>
       </div>
+
+      <Reminders />
+
       <div class="row">
         <div class="col-12 col-lg-10 m-auto">
           <div class="timer-section bg-dark">
-            <div id="countdown">
-              <ul class="pl-2 d-flex flex-column flex-md-row justify-content-center">
-                <li>
+            <div id="countdown" v-if="!this.errored">
+              <ul class="pl-2 d-flex flex-column flex-md-row justify-content-center" v-if="(days + hours + minutes > 0)">
+                <li v-if="days">
                   <p class="days">{{ days }}</p>
                   <p class="timeRefDays">days</p>
                 </li>
-                <li>
+                <li v-if="hours">
                   <p class="hours">{{ hours }}</p>
                   <p class="timeRefHours">hours</p>
                 </li>
-                <li>
+                <li v-if="minutes">
                   <p class="minutes">{{ minutes }}</p>
                   <p class="timeRefMinutes">minutes</p>
                 </li>
-                <li>
+                <li v-if="minutes">
                   <p class="seconds">{{ seconds }}</p>
                   <p class="timeRefSeconds">seconds</p>
+                </li>
+              </ul>
+              <ul class="pl-2 d-flex flex-column flex-md-row justify-content-center" v-else>
+                <li>
+                  <p class="days mb-0">Join Us Next Time!</p>
                 </li>
               </ul>
             </div>
@@ -42,7 +51,7 @@
         </div>
       </div>
 
-      <Reminders />
+      
 
     </div>
     <Foot class="mt-0" />
@@ -60,7 +69,8 @@ export default {
       days: 0,
       hours: 0,
       minutes: 0,
-      seconds: 0
+      seconds: 0,
+      errored: false
     };
   },
   computed: {
@@ -69,24 +79,6 @@ export default {
     },
     startTime() {
       return AppState.event.dTime;
-    },
-    gcal() {
-      const e = AppState.event
-      const x = AppState.event.dTime
-      let y = x.getFullYear()
-      let m = x.getMonth() + 1
-      if (m < 10) {
-        m = '0' + m.toString()
-      }
-      let d = x.getDate() + 1
-      if (d < 10) {
-        d = '0' + d.toString()
-      }
-      const dates = `${y}${m}${d}T143000Z%2F${y}${m}${d}T240000Z`
-      return `https://www.google.com/calendar/render?action=TEMPLATE&text=${e.name}+${y}&details=${e.snippet}.&location=${e.address}&dates=${dates}`;
-    },
-    directions() {
-      return `https://www.google.com/maps/place/${AppState.event.address}`;
     }
   },
   mounted() {
@@ -97,16 +89,24 @@ export default {
   },
   methods: {
     updateTime() {
-      this.now = Date.now();
-      // Find the distance between now and the count down date
-      var distance = this.startTime.getTime() - this.now;
-      // Time calculations for days, hours, minutes and seconds
-      this.days = Math.floor(distance / (1000 * 60 * 60 * 24));
-      this.hours = Math.floor(
-        (distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)
-      );
-      this.minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-      this.seconds = Math.floor((distance % (1000 * 60)) / 1000);
+      try {
+        this.now = Date.now();
+        // Find the distance between now and the count down date
+        var distance = this.startTime.getTime() - this.now;
+        // Time calculations for days, hours, minutes and seconds
+        this.days = Math.floor(distance / (1000 * 60 * 60 * 24));
+        this.hours = Math.floor(
+          (distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)
+        );
+        this.minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+        this.seconds = Math.floor((distance % (1000 * 60)) / 1000);
+        if (isNaN(this.now) || isNaN(this.days) || isNaN(this.hours) || isNaN(this.minutes) || isNaN(this.seconds)) {
+          this.errored = true
+          clearInterval(this.interval)
+        }
+      } catch (e) {
+        this.errored = true
+      }
     }
   }
 };

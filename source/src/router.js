@@ -1,4 +1,4 @@
-import { createRouter, createWebHistory } from 'vue-router'
+import { createRouter, createWebHashHistory } from 'vue-router'
 
 function loadPage(page) {
   return () => import(`./pages/${page}.vue`)
@@ -25,6 +25,6 @@ const routes = [
 export const router = createRouter({
   linkActiveClass: 'router-link-active',
   linkExactActiveClass: 'router-link-exact-active',
-  history: createWebHistory(),
+  history: createWebHashHistory(),
   routes
 })

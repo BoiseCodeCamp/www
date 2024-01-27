@@ -1,8 +1,8 @@
 <template>
   <div>
-    <div class="row m-auto p-md-3 mt-5">
+    <div class="row m-auto p-lg-3 mt-5">
       <div
-        class="col-12 col-lg-4 offset-lg-1 order-2 order-lg-1 justify-content-center d-flex flex-column"
+        class="col-lg-4 offset-lg-1 order-2 order-lg-1 justify-content-center d-flex flex-column"
       >
         <h2>The Venue</h2>
         <p>
@@ -24,7 +24,7 @@
           to plan and book your stay.
         </p>
       </div>
-      <div class="col-12 col-lg-6 offset-lg-1 order-1 order-lg-2 text-center">
+      <div class="col-lg-6 offset-lg-1 order-1 order-lg-2 text-center">
         <img
           class="img-fluid mb-4 mb-lg-0 text-shadow rounded"
           src="../assets/img/venue.jpg"
@@ -33,7 +33,7 @@
       </div>
     </div>
     <div class="row m-auto p-md-3 mt-5">
-      <div class="col-12 col-lg-6 offset-lg-1 text-center mb-3">
+      <div class="col-lg-6 offset-lg-1 text-center mb-3">
         <img
           class="img-fluid mb-4 mb-lg-0 text-shadow rounded"
           src="../assets/img/codecamp-lunch.jpg"
@@ -41,7 +41,7 @@
         />
       </div>
       <div
-        class="col-12 col-lg-4 offset-lg-1 justify-content-center d-flex flex-column"
+        class="col-lg-4 offset-lg-1 justify-content-center d-flex flex-column"
       >
         <h2>Free Meal!!!</h2>
         <p>

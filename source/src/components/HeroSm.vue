@@ -1,11 +1,11 @@
 <template>
   <div class="hero">
     <header class="container-fluid bg-dark p-5">
-      <div class="row align-items-center text-shadow">
+      <div class="row  text-shadow mt-3 py-5">
         <div class="col offset-lg-1 col-lg-4">
           <div class="text-light">
             <img
-              class="img-fluid mb-3"
+              class="img-fluid"
               src="../assets/img/codecamp-words.png"
               alt="codecamp words"
             />
@@ -39,7 +39,7 @@ header {
   background-image: url(../assets/img/codecamp-header-bg.png);
   background-position: center;
   background-size: cover;
-  height: 47vh;
+  height: 55vh;
   font-size: 16pt;
 }
 </style>
