@@ -1,0 +1,37 @@
+{
+  "folders": [
+    {
+      "path": "source",
+    },
+    {
+      "path": ".github"
+    }
+  ],
+  "extensions": {
+    "recommendations": [
+      "Vue.volar"
+    ]
+  },
+  "settings": {
+    "workbench.colorCustomizations": {
+      "activityBar.activeBackground": "#42b20c",
+      "activityBar.background": "#42b20c",
+      "activityBar.foreground": "#e7e7e7",
+      "activityBar.inactiveForeground": "#e7e7e799",
+      "activityBarBadge.background": "#1059ef",
+      "activityBarBadge.foreground": "#e7e7e7",
+      "commandCenter.border": "#e7e7e799",
+      "sash.hoverBorder": "#42b20c",
+      "statusBar.background": "#308209",
+      "statusBar.foreground": "#e7e7e7",
+      "statusBarItem.hoverBackground": "#42b20c",
+      "statusBarItem.remoteBackground": "#308209",
+      "statusBarItem.remoteForeground": "#e7e7e7",
+      "titleBar.activeBackground": "#308209",
+      "titleBar.activeForeground": "#e7e7e7",
+      "titleBar.inactiveBackground": "#30820999",
+      "titleBar.inactiveForeground": "#e7e7e799"
+    },
+    "peacock.color": "#308209"
+  }
+}

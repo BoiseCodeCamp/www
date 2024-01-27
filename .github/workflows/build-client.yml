@@ -1,0 +1,29 @@
+name: Static Build
+
+on:
+  push:
+    branches:
+      - production
+
+jobs:
+  deploy-client:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository 👀
+        uses: actions/checkout@v4
+
+      - name: Build the Client 🏗️
+        run: |
+          cd source && npm ci && npm run build
+
+      - name: Pushes to another repository
+        uses: cpina/github-action-push-to-another-repository@main
+        env:
+          API_TOKEN_GITHUB: ${{ secrets.API_TOKEN_GITHUB }}
+        with:
+          source-directory: "source/dist"
+          destination-github-username: "${{ secrets.GH_USERNAME }}"
+          destination-repository-name: "${{ secrets.GH_REPO }}"
+          user-email: ${{ secrets.GH_EMAIL }}
+          target-branch: main
