@@ -25,7 +25,7 @@
       <Speakers />
       <Experience />
     </section>
-    
+
     <section class="container-fluid">
 
       <div class="row">
@@ -56,6 +56,26 @@
         </div>
       </div>
     </section>
+
+    <section class="container-fluid">
+      <div class="row my-5 ms-lg-3">
+        <div class="col-lg-8 offset-lg-1">
+          <h2>Register Today and Code with Us!</h2>
+          <p>
+            Ready to embark on a whirlwind coding adventure? Register for CodeCamp Community's one-day extravaganza and be
+            part of a dynamic learning experience fueled by the passion of our community. Unleash your creativity, sharpen
+            your coding skills, and make lasting connections with fellow enthusiasts in this immersive coding celebration.
+          </p>
+          <p>
+            Don't miss out on this unique opportunity to code, learn, and grow in a supportive community-driven
+            environment.
+            Embrace the thrill of a one-day coding camp and let your coding journey begin with us at Boise Code Camp!
+          </p>
+          <p>See <b class="text-primary">you</b> there!</p>
+        </div>
+      </div>
+    </section>
+
     <RegisterButton title="Don't wait to sign up, your next big move is waiting!" class="mb-0" />
     <Foot />
   </div>
