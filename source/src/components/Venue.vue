@@ -32,7 +32,7 @@
         />
       </div>
     </div>
-    <div class="row m-auto p-md-3 mt-5">
+    <!-- <div class="row m-auto p-md-3 mt-5">
       <div class="col-lg-6 offset-lg-1 text-center mb-3">
         <img
           class="img-fluid mb-4 mb-lg-0 text-shadow rounded"
@@ -55,7 +55,7 @@
           location to choose from nearby.
         </p>
       </div>
-    </div>
+    </div> -->
   </div>
 </template>
 

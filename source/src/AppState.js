@@ -20,28 +20,47 @@ export const AppState = reactive({
   },
   about: [
     {
-      title: 'About CodeCamp',
+      title: 'About Boise Code Camp',
       img: aboutImg,
-      description: 'Code Camp is a free event for developers, hardware geeks, and the curious to come and learn from their peers. We will have a full day worth of sessions ranging from databases, the latest development languages, mobile technologies, and much more.'
+      description: `Code Camp is a free event for developers, hardware geeks, and the curious to come and learn from their peers. We will have a full day worth of sessions ranging from databases, the latest development languages, mobile technologies, and much more. 
+
+We believe that learning is a collective adventure. Our community is comprised of seasoned mentors and eager learners. Forge connections, ask questions, and collaborate in presentations, fostering an environment where everyone contributes to the collective learning experience.`
     },
     {
-      title: 'Why Boise',
+      title: 'Why Attend?',
       video: 'https://www.youtube.com/embed/apz6jUqmVJU?si=gvD-ALtSjq9VNKjx&amp;start=60&rel=0',
-      description: `As the third largest city in the Pacific Northwest and the largest city in the region Boise is our core of culture. It is the capital city of Idaho and the hub of commerce, innovation, government and industry for the state. 
+      description: `Besides the fact that it's awesome, you'll learn a ton, and meet awesome people. You are going to expand your opportunities for career growth!
 
-With a river literally running through it, this dynamic and growing city showcases how connectivity to commerce coexists with vibrant cultural experiences and easy access to recreation and surrounding cities and states.
+*Inclusive and Beginner-Friendly*
 
-Boise is consistently ranked most popular places to live with its people-friendly nature you'll be sure to enjoy your stay.`
+Whether you're a coding novice or a seasoned developer, our one-day code camp is designed to be inclusive for all. We've carefully curated workshops and activities to ensure that everyone, regardless of their background, can jump in and enjoy the excitement of coding.
+
+*Celebrating Diversity in Tech*
+
+Diversity drives innovation. Our community embraces individuals from all walks of life, celebrating the unique perspectives and experiences that each participant brings to the table. Join us in creating an inclusive space where everyone feels welcome and valued.`
     },
     {
-      title: 'Youth Track',
+      title: 'What\'s it Like?',
       img: collage,
-      description: `Do you have young coders? Are you a young person interested in technology? Boise Code Camp has an all-day track of coding and technology sessions aimed at youth ages 6 to 16. In the last year, millions of kids, many of them in our own community, have learned to code with the Hour of Code and tools like Scratch and Raspberry Pi. Boise Code Camp is representative of our community and the kids in our community are starting to code.
+      description: `Are you itching to dive into the fascinating world of coding, but the idea of a lengthy commitment seems daunting? Join us at Boise Code Camp for an exhilarating one-day coding extravaganza, fueled by the vibrant spirit of our community and entirely free of charge!
 
-The youth track is for the novice or experienced kid coder. In our Scratch sessions, new coders will find a very approachable platform and participants in the Hour of Code will find a very familiar interface style. Experienced coders will find challenging material for building a web site or can even sneak into an adult focused javscript or robotics session and learn what it's like to be a professional programmer. Also, what kid doesn't want to learn how to hack Minecraft and hang out with other kids who are also interested in technology?
+*Hands-On Workshops*
 
-Kid coders as young as 6 years old up through high school can present if their submission is accepted.`
-    }
+> Immerse yourself in a day packed with hands-on coding workshops designed to cater to learners of all levels. Our community-driven sessions cover a range of topics, from the fundamentals of programming to exciting forays into cutting-edge technologies. Get ready to roll up your sleeves, as you code alongside passionate mentors and fellow enthusiasts.
+
+*Lightning Talks*
+
+> Experience the thrill of rapid-fire lightning talks, where community members share insights, hacks, and personal stories about their coding journeys. These bite-sized presentations are not only informative but also inspiring, providing a unique opportunity to connect with like-minded individuals who share your enthusiasm for coding.`
+    },
+    //     {
+    //       title: 'Youth Track',
+    //       img: collage,
+    //       description: `Do you have young coders? Are you a young person interested in technology? Boise Code Camp has an all-day track of coding and technology sessions aimed at youth ages 6 to 16. In the last year, millions of kids, many of them in our own community, have learned to code with the Hour of Code and tools like Scratch and Raspberry Pi. Boise Code Camp is representative of our community and the kids in our community are starting to code.
+
+    // The youth track is for the novice or experienced kid coder. In our Scratch sessions, new coders will find a very approachable platform and participants in the Hour of Code will find a very familiar interface style. Experienced coders will find challenging material for building a web site or can even sneak into an adult focused javscript or robotics session and learn what it's like to be a professional programmer. Also, what kid doesn't want to learn how to hack Minecraft and hang out with other kids who are also interested in technology?
+
+    // Kid coders as young as 6 years old up through high school can present if their submission is accepted.`
+    //     }
   ],
   keynote: {
     // speaker: {
