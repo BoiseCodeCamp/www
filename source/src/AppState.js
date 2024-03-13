@@ -63,19 +63,26 @@ Diversity drives innovation. Our community embraces individuals from all walks o
     //     }
   ],
   keynote: {
-    // speaker: {
-    //   name: "Laurent Bugnion",
-    //   title: "Senior Cloud Developer Advocate",
-    //   company: "Microsoft",
-    //   img: "https://avatars1.githubusercontent.com/u/4922457?s=400&v=4"
-    // },
-    // title:
-    //   "25 years ago, software development was very different… or was it?",
-    // abstract:
-    //   "Development environments were maybe not that powerful, we were running on a lot less RAM and CPU, but we were already architecting systems, converting code in bytes, running machines and connecting them with networks. We maybe didn't have all these fancy SPAs and Clouds, but we had Internet and a web browser. A few years later we would even get JavaScript and start coding pretty cool web apps and the world would never quite be the same anymore.",
-    // time: "8:45 - 9:30 AM",
-    // session: "keynote",
-    // location: "Jordan Ballroom"
+    speaker: {
+      name: "Scott Nichols",
+      title: "Principal Cloud Solutions Architect",
+      company: "Microsoft",
+      img: "https://avatars.githubusercontent.com/u/1429587?v=4"
+    },
+    title:
+      "Navigating the Intersection of Human Expertise and AI Advancements: A Developer's Guide",
+    abstract:`In a rapidly evolving technological landscape, developers find themselves at a crucial crossroads where human expertise intersects with the advancements of Artificial Intelligence (AI). As a seasoned professional with a diverse background spanning emergency medical services to cloud architecture, Scott Nichols brings a unique perspective to this discussion.
+
+    In this talk, Scott will delve into strategies for developers to remain effective in a world increasingly shaped by AI. Drawing from his extensive experience in IT, cloud architecture, and community leadership, he will explore the evolving role of developers amidst the proliferation of AI technologies.
+    
+    Scott will address the importance of embracing open web standards, open-source solutions, and the latest advancements in Microsoft technologies. With insights gleaned from his leadership roles in developer communities and his tenure as a Principal Cloud Solutions Architect at Microsoft, he will provide practical guidance on leveraging AI to enhance development workflows and optimize solutions.
+    
+    Moreover, Scott will emphasize the significance of maintaining a holistic approach to technology adoption, advocating for the seamless integration of AI-driven innovations with existing frameworks. He will offer strategies for developers to cultivate adaptability, continuous learning, and creativity in their craft, empowering them to harness the full potential of AI while preserving the essence of human ingenuity.
+    
+    Through anecdotes from his diverse professional journey and a passion for outdoor pursuits, Scott will inspire developers to navigate the ever-changing technological landscape with confidence and resilience. This talk promises to equip developers with the insights and tools necessary to thrive in an era where collaboration between human expertise and AI capabilities is paramount`,
+    time: "8:45 - 9:30 AM",
+    session: "keynote",
+    location: "CodeWorks Lab"
   },
   sponsors: [],
   sessions: [],
