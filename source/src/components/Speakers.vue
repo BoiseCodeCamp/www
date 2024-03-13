@@ -23,9 +23,11 @@
                 :src="speaker.profilePicture || `https://ui-avatars.com/api/?name=${encodeURIComponent(speaker.fullName)}`"
                 @error="(e) => e.target.src = `https://ui-avatars.com/api/?name=${encodeURIComponent(speaker.fullName)}`"
                 :alt="speaker.fullName" />
-              <div class="pl-3 mt-2 ms-2 border-left">
-                <p class="m-0 fs-3">{{ speaker.fullName }}</p>
-                <small>{{ speaker.tagLine }}</small>
+              <div class="ps-3 mt-2 ms-2 border-start">
+                <div class="d-flex flex-column">
+                  <p class="m-0 fs-3">{{ speaker.fullName }}</p>
+                  <small>{{ speaker.tagLine }}</small>
+                </div>
                 <p class="d-flex gap-4 mt-1 fs-5">
                   <a v-for="link in speaker.links" :key="link.linkType" :href="link.url" target="_blank"
                     :title="link.linkType">
@@ -33,6 +35,11 @@
                   </a>
                 </p>
               </div>
+            </div>
+            <div>
+              <small>
+                {{ speaker.bio }}
+              </small>
             </div>
             <hr class="my-4" />
             <div class="mb-3 d-flex flex-wrap align-items-center justify-content-between">
@@ -49,7 +56,7 @@
               </div>
             </div>
             <div class="sessions">
-              <div class="session" v-for="session in speaker.sessions" :key="session.id">
+              <div class="session" v-for="session in sessions" :key="session.id">
                 <session :session="session" />
               </div>
             </div>
@@ -74,7 +81,8 @@
         <p>
           If you're interested in becoming a speaker, we encourage you to submit a session proposal through our Call for
           Speakers (CFS) form. This is your chance to pitch your topic and provide details about your presentation. Our
-          team will review all submissions and select speakers based on various criteria, including relevance, expertise,
+          team will review all submissions and select speakers based on various criteria, including relevance,
+          expertise,
           and overall program balance.
         </p>
         <p>
@@ -117,6 +125,7 @@ export default {
     return {
       speakers: computed(() => AppState.speakers),
       speaker: computed(() => AppState.speaker),
+      sessions: computed(() => AppState.sessions[0]?.sessions.filter(s => s.speakers?.find(ss => ss.id == AppState.speaker?.id))),
       cfs: AppState.cfs
     };
   }

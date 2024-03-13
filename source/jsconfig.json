@@ -1,8 +1,11 @@
 {
   "include": [
-    "./src/**/*"
+    "./src/**/*.vue",
+    "./src/**/*.js"
   ],
   "compilerOptions": {
-    "jsx": "preserve"
+    "jsx": "preserve",
+    "allowJs": true,
+    "checkJs": true,
   }
 }

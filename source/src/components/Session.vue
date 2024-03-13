@@ -4,10 +4,10 @@
       <button class="text-primary mb-0 btn ps-0" type="button" data-bs-toggle="collapse"
         :data-bs-target="'#session-details-' + session.id" aria-expanded="false"
         :aria-controls="'session-details-' + session.id" v-if="session.description">
-        {{ session.name }}
+        {{ session.title }}
         <i class="mdi mdi-chevron-down"></i>
       </button>
-      <p class="mb-0" v-else>{{ session.name }}</p>
+      <p class="mb-0" v-else>{{ session.title }}</p>
       <div class="text-muted d-md-block d-flex flex-column">
         <sup style="margin-top: .15rem">
           <i class="mdi  mdi-map-marker"></i>

@@ -73,18 +73,16 @@ Diversity drives innovation. Our community embraces individuals from all walks o
       "Navigating the Intersection of Human Expertise and AI Advancements: A Developer's Guide",
     abstract:`In a rapidly evolving technological landscape, developers find themselves at a crucial crossroads where human expertise intersects with the advancements of Artificial Intelligence (AI). As a seasoned professional with a diverse background spanning emergency medical services to cloud architecture, Scott Nichols brings a unique perspective to this discussion.
 
-    In this talk, Scott will delve into strategies for developers to remain effective in a world increasingly shaped by AI. Drawing from his extensive experience in IT, cloud architecture, and community leadership, he will explore the evolving role of developers amidst the proliferation of AI technologies.
-    
-    Scott will address the importance of embracing open web standards, open-source solutions, and the latest advancements in Microsoft technologies. With insights gleaned from his leadership roles in developer communities and his tenure as a Principal Cloud Solutions Architect at Microsoft, he will provide practical guidance on leveraging AI to enhance development workflows and optimize solutions.
-    
-    Moreover, Scott will emphasize the significance of maintaining a holistic approach to technology adoption, advocating for the seamless integration of AI-driven innovations with existing frameworks. He will offer strategies for developers to cultivate adaptability, continuous learning, and creativity in their craft, empowering them to harness the full potential of AI while preserving the essence of human ingenuity.
-    
-    Through anecdotes from his diverse professional journey and a passion for outdoor pursuits, Scott will inspire developers to navigate the ever-changing technological landscape with confidence and resilience. This talk promises to equip developers with the insights and tools necessary to thrive in an era where collaboration between human expertise and AI capabilities is paramount`,
+In this talk, Scott will delve into strategies for developers to remain effective in a world increasingly shaped by AI. Drawing from his extensive experience in IT, cloud architecture, and community leadership, he will explore the evolving role of developers amidst the proliferation of AI technologies.
+
+Through anecdotes from his diverse professional journey and a passion for outdoor pursuits, Scott will inspire developers to navigate the ever-changing technological landscape with confidence and resilience. This talk promises to equip developers with the insights and tools necessary to thrive in an era where collaboration between human expertise and AI capabilities is paramount`,
     time: "8:45 - 9:30 AM",
     session: "keynote",
     location: "CodeWorks Lab"
   },
-  sponsors: [],
+  sponsors: [
+    {id: 'codeworks', level: 'platinum', url: 'https://boisecodeworks.com/', name: 'CodeWorks', logo: 'https://bcw.blob.core.windows.net/public/img/8600856373152463'}
+  ],
   sessions: [],
   speakers: [],
   schedule: [],

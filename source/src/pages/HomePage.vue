@@ -26,7 +26,7 @@
       <Experience />
     </section>
 
-    <section class="container-fluid">
+    <section class="container">
 
       <div class="row">
         <RegisterButton title="Doesn't this sound great? Reserve your spot now!" />
@@ -49,9 +49,13 @@
                 incredible sponsors. Make sure you stop by their booths to check
                 out the coolest swag and potential career opportunities.
               </p>
-              <p>Interested in sponsoring Boise Code Camp? Checkout the <a href="/sponsor-packet/">Sponsor Packet</a> for
+              <p>Interested in sponsoring Boise Code Camp? Checkout the <a href="/sponsor-packet/">Sponsor Packet</a>
+                for
                 available sponsor levels.</p>
             </div>
+          </div>
+          <div class="my-3">
+            <Sponsors />
           </div>
         </div>
       </div>
@@ -62,9 +66,12 @@
         <div class="col-lg-8 offset-lg-1">
           <h2>Register Today and Code with Us!</h2>
           <p>
-            Ready to embark on a whirlwind coding adventure? Register for CodeCamp Community's one-day extravaganza and be
-            part of a dynamic learning experience fueled by the passion of our community. Unleash your creativity, sharpen
-            your coding skills, and make lasting connections with fellow enthusiasts in this immersive coding celebration.
+            Ready to embark on a whirlwind coding adventure? Register for CodeCamp Community's one-day extravaganza and
+            be
+            part of a dynamic learning experience fueled by the passion of our community. Unleash your creativity,
+            sharpen
+            your coding skills, and make lasting connections with fellow enthusiasts in this immersive coding
+            celebration.
           </p>
           <p>
             Don't miss out on this unique opportunity to code, learn, and grow in a supportive community-driven
