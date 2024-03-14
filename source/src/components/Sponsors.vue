@@ -1,38 +1,14 @@
 <template>
-  <div class="sponsors container-fluid pl-lg-5 pr-lg-5 bg-white">
-    <h3 class="text-center">{{this.year}} Sponsors</h3>
-    <div
-      class="row m-auto pl-3 pt-4 sponsor-level"
-      :class="level"
-      v-for="(sponsors, level) in sponsorMap"
-      :key="level"
-    >
-      <div class="col-12 text-center" v-if="!hide(level) && level != 'friends'">
+  <div class="sponsors container-fluid bg-white">
+    <h3 class="text-center">{{ this.year }} Sponsors</h3>
+    <div class="row m-auto pl-3 pt-4 sponsor-level" :class="level" v-for="(sponsors, level) in sponsorMap" :key="level">
+      <div class="col-12 text-center" v-if="!hide(level)">
         <small class="uppercase"><b>{{ level }}</b></small>
-         <div class="text-center sponsor">
-           <a
-            v-for="s in sponsors"
-            :key="s.id"
-            :href="s.url"
-            target="_blank"
-            rel="noopener"
-            :title="s.name"
-          >
-            <img
-              :src="s.logo"
-              class="rounded"
-              :alt="s.name"/>
+        <div class="text-center sponsor">
+          <a v-for="s in sponsors" :key="s.id" :href="s.url" target="_blank" rel="noopener" :title="s.name">
+            <img v-if="s.logo" :src="s.logo" class="rounded" :alt="s.name" />
+            <p v-else>{{ s.name }}</p>
           </a>
-        </div>
-      </div>
-      <div class="col-12 text-center" v-if="level === 'friends'">
-        <small class="uppercase"><b>{{ level }}</b></small>
-         <div class="text-center">
-           <small
-              v-for="s in sponsors"
-              :key="s.id">
-              {{ s.name }}
-            </small>
         </div>
       </div>
     </div>
@@ -45,7 +21,7 @@ import { AppState } from '../AppState.js';
 export default {
   props: ["hideGolds", "hideSilvers", "hideFriends"],
   computed: {
-    year(){
+    year() {
       return AppState.currentYear;
     },
     sponsors() {
@@ -55,14 +31,14 @@ export default {
       return this.sponsors.filter(s => s.level == "platinum");
     },
     golds() {
-      return this.sponsors.filter(s => s.level == "gold" && !this.hideGolds);
+      return this.sponsors.filter(s => s.level == "gold");
     },
     silvers() {
-      return this.sponsors.filter(s => s.level == "silver" && !this.hideSilvers);
+      return this.sponsors.filter(s => s.level == "silver");
     },
     friends() {
       return this.sponsors.filter(
-        s => s.level == "friend" && !this.hideFriends
+        s => s.level == "friend"
       );
     },
     sponsorMap() {
@@ -77,7 +53,7 @@ export default {
   methods: {
     hide(level) {
       try {
-        if (!this[level].length) {
+        if (!this[level]?.length) {
           return true;
         }
         level = level[0].toUpperCase() + level.slice(1);
@@ -91,32 +67,35 @@ export default {
 </script>
 
 <style>
-.sponsors{
-  padding-top:25px;
-  padding-bottom:0;
+.sponsors {
+  padding-top: 25px;
+  padding-bottom: 0;
 }
-.sponsor-level{
-  padding-top:0 !important;
+
+.sponsor-level {
+  padding-top: 0 !important;
 }
+
 .sponsor a {
   text-decoration: none;
 }
+
 .sponsor img {
   filter: grayscale(1);
-  height: 80px;
-  width: 80px;
+  height: 100px;
+  width: 100px;
   object-fit: contain;
-  padding:0 10px;
+  padding: 0 10px;
 }
 
 .golds .sponsor img {
-  height: 100px;
-  width: 100px;
+  height: 150px;
+  width: 150px;
 }
 
 .platinums .sponsor img {
   filter: grayscale(0);
-  height: 125px;
-  width: 125px;
+  height: 200px;
+  width: 200px;
 }
 </style>

@@ -1,6 +1,6 @@
 import { AppState } from "../AppState.js";
 
-const STORAGEKEY = AppState.STORAGEKEY;
+const STORAGEKEY = AppState.STORAGE_KEY;
 const APIKEY = AppState.SESSIONIZE_KEY;
 const TYPES = {
   Sessions: [],

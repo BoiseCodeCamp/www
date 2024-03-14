@@ -14,8 +14,8 @@
           </small>
         </div>
       </div>
-      <h1 class="text-primary">{{ keynote.title }}</h1>
-      <p class="lead">{{ keynote.abstract }}</p>
+      <h2 class="text-primary">{{ keynote.title }}</h2>
+      <Markdown :value="keynote.abstract" />
       <hr class="my-4" />
       <div class="d-flex">
         <img height="80" class="rounded" :src="keynote.speaker.img" :alt="keynote.speaker.name" />
@@ -41,5 +41,3 @@ export default {
   }
 };
 </script>
-
-<style></style>
