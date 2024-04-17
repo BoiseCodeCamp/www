@@ -11,12 +11,12 @@
               {{ event.location }}
             </h3>
             <div class="cta mt-3">
-              <router-link :to="{ name: 'Register' }" class="btn btn-lg btn-outline-info">
+              <a href="https://www.eventbrite.com/e/boise-code-camp-2024-tickets-885003688857" target="_blank"  class="btn btn-lg btn-outline-info">
                 <span class="me-2">Register Now</span>
                 <small>
                   <i class="mdi  mdi-chevron-right"></i>
                 </small>
-              </router-link>
+              </a>
             </div>
           </div>
         </div>

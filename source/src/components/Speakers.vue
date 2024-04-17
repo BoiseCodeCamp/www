@@ -66,7 +66,7 @@
     </div>
     <hr />
   </section>
-  <section>
+  <section class="d-none">
     <div class="schedule row m-auto p-md-3 mt-5">
       <div class="col-12 ">
         <h2>Want to be a Speaker?</h2>

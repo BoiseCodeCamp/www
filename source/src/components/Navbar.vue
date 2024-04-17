@@ -2,7 +2,8 @@
   <nav class="navbar fixed-top navbar-expand-lg transition p-3"
     :class="scrolled ? 'navbar-light bg-light z-depth' : 'navbar-dark'">
     <router-link class="d-flex align-items-center" to="/">
-      <img v-show="!scrolled" height="55" src="../assets/img/invert.png" alt="Boise Code Camp Logo" class="drop-shadow" />
+      <img v-show="!scrolled" height="55" src="../assets/img/invert.png" alt="Boise Code Camp Logo"
+        class="drop-shadow" />
       <img v-show="scrolled" height="55" src="../assets/img/logo.png" alt="Boise Code Camp Logo" />
       <h4 class="m-0 ms-2 text-primary" :class="scrolled ? '' : 'text-shadow'">
         <span :class="scrolled ? 'text-dark' : 'text-white'">Boise</span>CodeCamp
@@ -26,16 +27,15 @@
             >Dashboard
           </router-link>
         </li> -->
-        <li class="nav-item" v-for="link in links" :key="link.to.name">
-          <router-link class="nav-link text-uppercase" :to="link.to">
-            {{ link.to.name }}
-          </router-link>
-        </li>
         <li class="nav-item">
-          <a :href="cfs" target="_blank" rel="noopener" title="call for speakers"
-            class="nav-link text-uppercase">
-            Want to Speak?</a>
+          <a href="https://www.eventbrite.com/e/boise-code-camp-2024-tickets-885003688857" target="_blank"
+            rel="noopener" title="call for speakers" class="nav-link text-uppercase">
+            Register</a>
         </li>
+        <!-- <li class="nav-item">
+          <a :href="cfs" target="_blank" rel="noopener" title="call for speakers" class="nav-link text-uppercase">
+            Want to Speak?</a>
+        </li> -->
         <!-- <li class="nav-item">
           <a href="/sponsor-packet/index.html" target="_blank" rel="noopener" class="nav-link text-uppercase"
             title="Sponsor Packet">
@@ -62,11 +62,6 @@ export default {
       cfs: AppState.cfs,
       mobile: false,
       scrolled: false,
-      links: [
-        {
-          to: { name: "Register" }
-        }
-      ]
     };
   },
   methods: {
@@ -98,7 +93,4 @@ export default {
 .drop-shadow {
   filter: drop-shadow(2px 4px 6px #00000055);
 }
-
-
-
 </style>

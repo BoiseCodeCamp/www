@@ -2,7 +2,7 @@
   <div class="sponsors container-fluid bg-white">
     <h3 class="text-center">{{ this.year }} Sponsors</h3>
     <div class="row m-auto pl-3 pt-4 sponsor-level" :class="level" v-for="(sponsors, level) in sponsorMap" :key="level">
-      <div class="col-12 text-center" v-if="!hide(level)">
+      <div class="col-12 text-center" :class="sponsors.length ? '' : 'd-none'">
         <small class="uppercase"><b>{{ level }}</b></small>
         <div class="text-center sponsor">
           <a v-for="s in sponsors" :key="s.id" :href="s.url" target="_blank" rel="noopener" :title="s.name">
@@ -48,19 +48,6 @@ export default {
         silvers: this.silvers,
         friends: this.friends
       };
-    }
-  },
-  methods: {
-    hide(level) {
-      try {
-        if (!this[level]?.length) {
-          return true;
-        }
-        level = level[0].toUpperCase() + level.slice(1);
-        return this[`hide${level}`];
-      } catch (e) {
-        return false;
-      }
     }
   }
 };
