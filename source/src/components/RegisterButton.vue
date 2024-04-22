@@ -3,10 +3,10 @@
 		<p class="text-center fs-3 text-light" v-if="title">
 			{{ title }}
 		</p>
-		<RegisterForm v-if="showForm" />
-		<router-link v-else class="btn btn-lg btn-light fs-4" :to="{ name: 'Register' }">
+		<!-- <RegisterForm v-if="showForm" /> -->
+		<a href="https://www.eventbrite.com/e/boise-code-camp-2024-tickets-885003688857" target="_blank" class="btn btn-lg btn-light fs-4">
 				{{ text }} <i class="mdi mdi-chevron-right"></i>
-		</router-link>
+		</a>
 	</div>
 </template>
 
