@@ -28,6 +28,11 @@
           </router-link>
         </li> -->
         <li class="nav-item">
+          <a href="/schedule/" target="_blank"
+            rel="noopener" title="schedule" class="nav-link text-uppercase">
+            Schedule</a>
+        </li>
+        <li class="nav-item">
           <a href="https://www.eventbrite.com/e/boise-code-camp-2024-tickets-885003688857" target="_blank"
             rel="noopener" title="call for speakers" class="nav-link text-uppercase">
             Register</a>
