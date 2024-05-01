@@ -5,7 +5,7 @@
       <div class="col-12 mb-5">
         <h2>Speakers</h2>
         <p class="m-0">
-          <a class="border-top pt-1 small" href="/schedule" target="_blank" rel="noopener" title="Schedule">Schedule</a>
+          <a class="border-top pt-2 small" href="/schedule" target="_blank" rel="noopener" title="Schedule">Schedule</a>
         </p>
       </div>
       <div class="col-12 speaker-deck">
