@@ -25,7 +25,7 @@
         </p>
       </div>
       <div class="col-lg-6 offset-lg-1 order-1 order-lg-2 text-center">
-        <img class="img-fluid mb-4 mb-lg-0 text-shadow rounded" src="../assets/img/venue.jpg" alt="Venue" />
+        <img class="img-fluid mb-4 mb-lg-0 text-shadow rounded" :src="venue.img" alt="Venue" />
       </div>
     </div>
     <!-- <div class="row m-auto p-md-3 mt-5">
