@@ -5,17 +5,18 @@ import collage from './assets/img/codecamp-collage.png'
 
 // NOTE AppState is a reactive object to contain app level data
 export const AppState = reactive({
-  STORAGE_KEY: 'BOISECODECAMP24',
-  SESSIONIZE_KEY: 'dsz67efb',
-  cfs: 'https://sessionize.com/boise-code-camp-2024/',
-  currentYear: "2024",
+  STORAGE_KEY: 'BOISECODECAMP25',
+  SESSIONIZE_KEY: 'ac6en2ni',
+  cfs: 'https://sessionize.com/boise-code-camp-2025/',
+  register: '', // 'https://www.eventbrite.com/e/boise-code-camp-2025-tickets-1234567890',
+  currentYear: "2025",
   event: {
     name: "Boise CodeCamp",
-    date: "May 4",
-    dTime: new Date("2024-05-04 8:30"),
+    date: "May 3",
+    dTime: new Date("2025-05-03 8:30"),
     location: "Boise, Id",
     venue: "CodeWorks",
-    address: "8455 Westpark St, Boise, ID 83704",
+    address: "1360 S. Eagle Flight Way, Boise, ID 83709",
     snippet: 'Code Camp is a free event for developers, hardware geeks, and the curious to come and learn from their peers. Sessions range from native languages to the clouds and much more.'
   },
   about: [
@@ -63,25 +64,80 @@ Diversity drives innovation. Our community embraces individuals from all walks o
     //     }
   ],
   keynote: {
-    speaker: {
-      name: "Scott Nichols",
-      title: "Principal Cloud Solutions Architect",
-      company: "Microsoft",
-      img: "https://avatars.githubusercontent.com/u/1429587?v=4"
-    },
-    title:
-      "Navigating the Intersection of Human Expertise and AI Advancements: A Developer's Guide",
-    abstract:`In a rapidly evolving technological landscape, developers find themselves at a crucial crossroads where human expertise intersects with the advancements of Artificial Intelligence (AI). As a seasoned professional with a diverse background spanning emergency medical services to cloud architecture, Scott Nichols brings a unique perspective to this discussion.
+    //     speaker: {
+    //       name: "Scott Nichols",
+    //       title: "Principal Cloud Solutions Architect",
+    //       company: "Microsoft",
+    //       img: "https://avatars.githubusercontent.com/u/1429587?v=4"
+    //     },
+    //     title:
+    //       "Navigating the Intersection of Human Expertise and AI Advancements: A Developer's Guide",
+    //     abstract:`In a rapidly evolving technological landscape, developers find themselves at a crucial crossroads where human expertise intersects with the advancements of Artificial Intelligence (AI). As a seasoned professional with a diverse background spanning emergency medical services to cloud architecture, Scott Nichols brings a unique perspective to this discussion.
 
-In this talk, Scott will delve into strategies for developers to remain effective in a world increasingly shaped by AI. Drawing from his extensive experience in IT, cloud architecture, and community leadership, he will explore the evolving role of developers amidst the proliferation of AI technologies.
+    // In this talk, Scott will delve into strategies for developers to remain effective in a world increasingly shaped by AI. Drawing from his extensive experience in IT, cloud architecture, and community leadership, he will explore the evolving role of developers amidst the proliferation of AI technologies.
 
-Through anecdotes from his diverse professional journey and a passion for outdoor pursuits, Scott will inspire developers to navigate the ever-changing technological landscape with confidence and resilience. This talk promises to equip developers with the insights and tools necessary to thrive in an era where collaboration between human expertise and AI capabilities is paramount`,
-    time: "8:45 - 9:30 AM",
-    session: "keynote",
-    location: "CodeWorks Lab"
+    // Through anecdotes from his diverse professional journey and a passion for outdoor pursuits, Scott will inspire developers to navigate the ever-changing technological landscape with confidence and resilience. This talk promises to equip developers with the insights and tools necessary to thrive in an era where collaboration between human expertise and AI capabilities is paramount`,
+    //     time: "8:45 - 9:30 AM",
+    //     session: "keynote",
+    //     location: "CodeWorks Lab"
   },
   sponsors: [
-    {id: 'codeworks', level: 'platinum', url: 'https://boisecodeworks.com/', name: 'CodeWorks', logo: 'https://bcw.blob.core.windows.net/public/img/8600856373152463'}
+    {
+      id: 'cwi',
+      level: 'venue',
+      url: 'https://boisecodeworks.com/',
+      name: 'College of Western Idaho',
+      logo: 'https://cwi.edu/sites/all/themes/huckleberry/images/cwi_footer_logo.png'
+    },
+    // {
+    //   id: 'cwi',
+    //   level: 'platinum',
+    //   url: 'https://boisecodeworks.com/',
+    //   name: 'College of Western Idaho',
+    //   logo: 'https://cwi.edu/sites/all/themes/huckleberry/images/cwi_footer_logo.png'
+    // },
+    // {
+    //   id: 'codeworks',
+    //   level: 'gold',
+    //   url: 'https://boisecodeworks.com/',
+    //   name: 'CodeWorks',
+    //   logo: 'https://bcw.blob.core.windows.net/public/img/8600856373152463'
+    // },
+    // {
+    //   id: 'codeworks',
+    //   level: 'silver',
+    //   url: 'https://boisecodeworks.com/',
+    //   name: 'CodeWorks',
+    //   logo: 'https://bcw.blob.core.windows.net/public/img/8600856373152463'
+    // },
+    // {
+    //   id: 'codeworks',
+    //   level: 'community',
+    //   url: 'https://boisecodeworks.com/',
+    //   name: 'CodeWorks',
+    //   logo: 'https://download.logo.wine/logo/Microsoft/Microsoft-Logo.wine.png'
+    // },
+    // {
+    //   id: 'jetbrains',
+    //   level: 'community',
+    //   url: 'https://www.jetbrains.com/',
+    //   name: 'JetBrains',
+    //   logo: 'https://resources.jetbrains.com/storage/products/company/brand/logos/jetbrains.svg'
+    // },
+    {
+      id: 'rdc',
+      level: 'friend',
+      url: 'https://rdc.dev/',
+      name: 'Ryan Coates',
+      logo: 'https://media.licdn.com/dms/image/v2/C5603AQGYuRCORTLNlQ/profile-displayphoto-shrink_100_100/profile-displayphoto-shrink_100_100/0/1516251847024?e=1739404800&v=beta&t=oPUt_H5cKDtntG7Lmj45URnXq7g6esDqkJtt0Z4SC_w'
+    },
+    {
+      id: 'doug',
+      level: 'friend',
+      url: 'https://www.linkedin.com/in/douglasjreece/',
+      name: 'Doug Reece',
+      logo: 'https://media.licdn.com/dms/image/v2/C5603AQE0D3b-vTgObw/profile-displayphoto-shrink_100_100/profile-displayphoto-shrink_100_100/0/1588992780298?e=1739404800&v=beta&t=z136v5FwkPBITSBcUC_ed8hTy6arHHjXU-TMzqSNPqE'
+    },
   ],
   sessions: [],
   speakers: [],
@@ -107,5 +163,12 @@ Through anecdotes from his diverse professional journey and a passion for outdoo
       "4XL"
     ]
   },
-  speaker: null
+  speaker: null,
+  venue: {
+    name: "CWI",
+    address: "1360 S. Eagle Flight Way, Boise, ID 83709",
+    map: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2896.762383429122!2d-116.27685068448267!3d43.57536197912313!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x54ae5f7b1b4f6b8b%3A0x9f8c6c1b8b4a9c2!2sCodeWorks!5e0!3m2!1sen!2sus!4v1631196993718!5m2!1sen!2sus",
+    img: "https://bcw.blob.core.windows.net/public/img/8600856373152463",
+    url: "https://boisecodeworks.com/"
+  }
 })

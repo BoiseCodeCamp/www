@@ -27,26 +27,21 @@
             >Dashboard
           </router-link>
         </li> -->
-        <li class="nav-item">
-          <a href="/schedule/" target="_blank"
-            rel="noopener" title="schedule" class="nav-link text-uppercase">
-            Schedule</a>
-        </li>
-        <li class="nav-item">
-          <a href="https://www.eventbrite.com/e/boise-code-camp-2024-tickets-885003688857" target="_blank"
+        <li class="nav-item" v-if="attend">
+          <a :href="attend" target="_blank"
             rel="noopener" title="call for speakers" class="nav-link text-uppercase">
             Register</a>
         </li>
-        <!-- <li class="nav-item">
+        <li class="nav-item" v-if="cfs">
           <a :href="cfs" target="_blank" rel="noopener" title="call for speakers" class="nav-link text-uppercase">
             Want to Speak?</a>
-        </li> -->
-        <!-- <li class="nav-item">
+        </li>
+        <li class="nav-item">
           <a href="/sponsor-packet/index.html" target="_blank" rel="noopener" class="nav-link text-uppercase"
             title="Sponsor Packet">
             Sponsors
           </a>
-        </li> -->
+        </li>
       </ul>
     </div>
   </nav>
@@ -64,6 +59,7 @@ export default {
   },
   data() {
     return {
+      attend: AppState.register,
       cfs: AppState.cfs,
       mobile: false,
       scrolled: false,
