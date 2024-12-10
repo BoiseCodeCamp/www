@@ -10,8 +10,8 @@
               <span class="ms-md-3 me-md-3">|</span>
               {{ event.location }}
             </h3>
-            <div class="cta mt-3">
-              <a href="https://www.eventbrite.com/e/boise-code-camp-2024-tickets-885003688857" target="_blank"  class="btn btn-lg btn-outline-info">
+            <div class="cta mt-3" v-if="register">
+              <a :href="register" target="_blank"  class="btn btn-lg btn-outline-info">
                 <span class="me-2">Register Now</span>
                 <small>
                   <i class="mdi  mdi-chevron-right"></i>
@@ -46,6 +46,9 @@ export default {
   computed: {
     event() {
       return AppState.event;
+    },
+    register(){
+      return AppState.register
     }
   }
 };

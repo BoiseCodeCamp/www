@@ -3,18 +3,17 @@
     <div class="row m-auto p-lg-3 mt-5">
       <div class="col-lg-4 offset-lg-1 order-2 order-lg-1 justify-content-center d-flex flex-column">
         <h2>The Venue</h2>
-        <p>Located at <a
-            href="https://www.google.com/maps/place/Boise+CodeWorks/@43.6066741,-116.2866744,15z/data=!4m14!1m7!3m6!1s0x54ae494ccd9917fd:0xd267ec81cdf20f95!2sBoise+CodeWorks!8m2!3d43.6066741!4d-116.2866744!16s%2Fg%2F11b75j19j4!3m5!1s0x54ae494ccd9917fd:0xd267ec81cdf20f95!8m2!3d43.6066741!4d-116.2866744!16s%2Fg%2F11b75j19j4?entry=ttu"
-            target="_blank" title="codeworks address">8455 Westpark St, Boise, ID 83704</a>
+        <p>Located at <a :href="venue.map" target="_blank" title="venue address">{{ venue.address }}</a>
         </p>
         <p>
-          At <a href="https://boisecodeworks.com" target="_blank" title="CodeWorks"><b>CodeWorks</b></a> We are used to
-          educating the local tech community. CodeWorks is excited to have the community at large on campus as we learn
+          At <a :href="venue.url" target="_blank" :title="venue.url"><b>{{ venue.name }}</b></a> We are used to
+          educating the local tech community. {{ venue.name }} is excited to have the community at large on campus as we
+          learn
           and grow together.
         </p>
         <p>
           If you are driving please watch for the signs and park in the
-          designated areas, be sure to show up early as free parking is limited
+          designated areas, be sure to show up early as parking is limited
         </p>
         <p><b>Coming from out of town?</b></p>
         <p>
@@ -57,7 +56,19 @@
 </template>
 
 <script>
+import { computed } from 'vue';
+import { AppState } from '../AppState.js';
+
 export default {
+
+  setup() {
+    const venue = computed(() => AppState.venue)
+
+    return {
+      venue
+    }
+  }
+
 };
 </script>
 

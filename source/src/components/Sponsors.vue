@@ -1,7 +1,7 @@
 <template>
   <div class="sponsors container-fluid bg-white">
     <h3 class="text-center">{{ this.year }} Sponsors</h3>
-    <div class="row m-auto pl-3 pt-4 sponsor-level" :class="level" v-for="(sponsors, level) in sponsorMap" :key="level">
+    <div class="row m-auto pl-3 py-4 sponsor-level" :class="level" v-for="(sponsors, level) in sponsorMap" :key="level">
       <div class="col-12 text-center" :class="sponsors.length ? '' : 'd-none'">
         <small class="uppercase"><b>{{ level }}</b></small>
         <div class="text-center sponsor">
@@ -27,6 +27,9 @@ export default {
     sponsors() {
       return AppState.sponsors;
     },
+    venue() {
+      return this.sponsors.filter(s => s.level == "venue");
+    },
     platinums() {
       return this.sponsors.filter(s => s.level == "platinum");
     },
@@ -36,6 +39,9 @@ export default {
     silvers() {
       return this.sponsors.filter(s => s.level == "silver");
     },
+    community() {
+      return this.sponsors.filter(s => s.level == "community");
+    },
     friends() {
       return this.sponsors.filter(
         s => s.level == "friend"
@@ -43,10 +49,12 @@ export default {
     },
     sponsorMap() {
       return {
+        venue: this.venue,
         platinums: this.platinums,
         golds: this.golds,
         silvers: this.silvers,
-        friends: this.friends
+        community: this.community,
+        friends: this.friends,
       };
     }
   }
@@ -68,12 +76,19 @@ export default {
 }
 
 .sponsor img {
-  filter: grayscale(1);
   height: 100px;
   width: 100px;
   object-fit: contain;
-  padding: 0 10px;
+  margin: 0 10px;
 }
+
+.venue .sponsor img{
+  height: 350px;
+  width: 350px;
+  background-color: teal;
+  padding: 15px;
+}
+
 
 .golds .sponsor img {
   height: 150px;
@@ -81,8 +96,16 @@ export default {
 }
 
 .platinums .sponsor img {
-  filter: grayscale(0);
   height: 200px;
   width: 200px;
+}
+
+.friends img{
+  border-radius: 50% !important;
+  height: 60px;
+  width: 60px;
+  aspect-ratio: 1/1;
+  object-fit: cover;
+
 }
 </style>
