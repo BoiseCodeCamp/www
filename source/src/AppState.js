@@ -168,7 +168,8 @@ Diversity drives innovation. Our community embraces individuals from all walks o
     name: "CWI",
     address: "1360 S. Eagle Flight Way, Boise, ID 83709",
     map: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2896.762383429122!2d-116.27685068448267!3d43.57536197912313!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x54ae5f7b1b4f6b8b%3A0x9f8c6c1b8b4a9c2!2sCodeWorks!5e0!3m2!1sen!2sus!4v1631196993718!5m2!1sen!2sus",
-    img: "https://bcw.blob.core.windows.net/public/img/8600856373152463",
+    logo: "https://cwi.edu/sites/all/themes/huckleberry/images/cwi_footer_logo.png",
+    img: "https://idahonews.com/resources/media2/16x9/full/1500/center/80/2f008bf0-5ed5-4881-98bf-bda9507cd561-jumbo16x9_IMG_1814.jpeg",
     url: "https://boisecodeworks.com/"
   }
 })
