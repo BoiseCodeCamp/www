@@ -127,7 +127,7 @@ Diversity drives innovation. Our community embraces individuals from all walks o
     {
       id: 'rdc',
       level: 'friend',
-      url: 'https://rdc.dev/',
+      url: 'https://www.linkedin.com/in/ryandcoates/',
       name: 'Ryan Coates',
       logo: 'https://media.licdn.com/dms/image/v2/C5603AQGYuRCORTLNlQ/profile-displayphoto-shrink_100_100/profile-displayphoto-shrink_100_100/0/1516251847024?e=1739404800&v=beta&t=oPUt_H5cKDtntG7Lmj45URnXq7g6esDqkJtt0Z4SC_w'
     },
