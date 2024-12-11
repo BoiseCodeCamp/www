@@ -103,27 +103,27 @@ Diversity drives innovation. Our community embraces individuals from all walks o
     //   name: 'CodeWorks',
     //   logo: 'https://bcw.blob.core.windows.net/public/img/8600856373152463'
     // },
-    // {
-    //   id: 'codeworks',
-    //   level: 'silver',
-    //   url: 'https://boisecodeworks.com/',
-    //   name: 'CodeWorks',
-    //   logo: 'https://bcw.blob.core.windows.net/public/img/8600856373152463'
-    // },
-    // {
-    //   id: 'codeworks',
-    //   level: 'community',
-    //   url: 'https://boisecodeworks.com/',
-    //   name: 'CodeWorks',
-    //   logo: 'https://download.logo.wine/logo/Microsoft/Microsoft-Logo.wine.png'
-    // },
-    // {
-    //   id: 'jetbrains',
-    //   level: 'community',
-    //   url: 'https://www.jetbrains.com/',
-    //   name: 'JetBrains',
-    //   logo: 'https://resources.jetbrains.com/storage/products/company/brand/logos/jetbrains.svg'
-    // },
+    {
+      id: 'shooting-trio',
+      level: 'community',
+      url: 'https://boisecodeworks.com/',
+      name: 'Shooting Trio',
+      logo: '/img/shooting-trio.webp'
+    },
+    {
+      id: 'codeworks',
+      level: 'community',
+      url: 'https://boisecodeworks.com/',
+      name: 'CodeWorks',
+      logo: 'https://bcw.blob.core.windows.net/public/img/8600856373152463'
+    },
+    {
+      id: 'jetbrains',
+      level: 'community',
+      url: 'https://www.jetbrains.com/',
+      name: 'JetBrains',
+      logo: 'https://resources.jetbrains.com/storage/products/company/brand/logos/jetbrains.svg'
+    },
     {
       id: 'rdc',
       level: 'friend',
