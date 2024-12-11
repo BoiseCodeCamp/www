@@ -106,7 +106,7 @@ Diversity drives innovation. Our community embraces individuals from all walks o
     {
       id: 'shooting-trio',
       level: 'community',
-      url: 'https://boisecodeworks.com/',
+      url: 'https://shootingtrio.com/',
       name: 'Shooting Trio',
       logo: '/img/shooting-trio.webp'
     },
