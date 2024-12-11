@@ -3,7 +3,11 @@
     <h3 class="text-center">{{ this.year }} Sponsors</h3>
     <div class="row m-auto pl-3 py-4 sponsor-level" :class="level" v-for="(sponsors, level) in sponsorMap" :key="level">
       <div class="col-12 text-center" :class="sponsors.length ? '' : 'd-none'">
-        <small class="uppercase"><b>{{ level }}</b></small>
+        <small class="uppercase">
+          <b>
+            {{ level == 'friends' ? "Friends of Code Camp" : level }}
+          </b>
+        </small>
         <div class="text-center sponsor">
           <a v-for="s in sponsors" :key="s.id" :href="s.url" target="_blank" rel="noopener" :title="s.name">
             <img v-if="s.logo" :src="s.logo" class="rounded" :alt="s.name" />
@@ -45,7 +49,7 @@ export default {
     friends() {
       return this.sponsors.filter(
         s => s.level == "friend"
-      );
+      )
     },
     sponsorMap() {
       return {
@@ -82,7 +86,7 @@ export default {
   margin: 0 10px;
 }
 
-.venue .sponsor img{
+.venue .sponsor img {
   height: 350px;
   width: 350px;
   background-color: teal;
@@ -100,7 +104,7 @@ export default {
   width: 200px;
 }
 
-.friends img{
+.friends img {
   border-radius: 50% !important;
   height: 60px;
   width: 60px;
