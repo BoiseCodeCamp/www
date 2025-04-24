@@ -85,7 +85,7 @@ Diversity drives innovation. Our community embraces individuals from all walks o
     {
       id: 'cwi',
       level: 'venue',
-      url: 'https://boisecodeworks.com/',
+      url: 'https://cwi.edu/',
       name: 'College of Western Idaho',
       logo: 'https://cwi.edu/sites/all/themes/huckleberry/images/cwi_footer_logo.png'
     },
@@ -97,12 +97,12 @@ Diversity drives innovation. Our community embraces individuals from all walks o
     //   logo: 'https://cwi.edu/sites/all/themes/huckleberry/images/cwi_footer_logo.png'
     // },
     // {
-    //   id: 'codeworks',
-    //   level: 'gold',
-    //   url: 'https://boisecodeworks.com/',
-    //   name: 'CodeWorks',
-    //   logo: 'https://bcw.blob.core.windows.net/public/img/8600856373152463'
-    // },
+       id: 'zerrtech',
+       level: 'gold',
+       url: 'https://www.zerrtech.com/',
+       name: 'Zerrtech',
+       logo: 'https://www.zerrtech.com/static/08b35ac6b1ef17f2c898773b2403c98d/fbaa7/header-logo.webp'
+     },
     {
       id: 'shooting-trio',
       level: 'community',
@@ -123,20 +123,6 @@ Diversity drives innovation. Our community embraces individuals from all walks o
       url: 'https://www.jetbrains.com/',
       name: 'JetBrains',
       logo: 'https://resources.jetbrains.com/storage/products/company/brand/logos/jetbrains.svg'
-    },
-    {
-      id: 'rdc',
-      level: 'friend',
-      url: 'https://www.linkedin.com/in/ryandcoates/',
-      name: 'Ryan Coates',
-      logo: 'https://media.licdn.com/dms/image/v2/C5603AQGYuRCORTLNlQ/profile-displayphoto-shrink_100_100/profile-displayphoto-shrink_100_100/0/1516251847024?e=1739404800&v=beta&t=oPUt_H5cKDtntG7Lmj45URnXq7g6esDqkJtt0Z4SC_w'
-    },
-    {
-      id: 'doug',
-      level: 'friend',
-      url: 'https://www.linkedin.com/in/douglasjreece/',
-      name: 'Doug Reece',
-      logo: 'https://media.licdn.com/dms/image/v2/C5603AQE0D3b-vTgObw/profile-displayphoto-shrink_100_100/profile-displayphoto-shrink_100_100/0/1588992780298?e=1739404800&v=beta&t=z136v5FwkPBITSBcUC_ed8hTy6arHHjXU-TMzqSNPqE'
     },
   ],
   sessions: [],
