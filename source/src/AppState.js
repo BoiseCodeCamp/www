@@ -96,7 +96,7 @@ Diversity drives innovation. Our community embraces individuals from all walks o
     //   name: 'College of Western Idaho',
     //   logo: 'https://cwi.edu/sites/all/themes/huckleberry/images/cwi_footer_logo.png'
     // },
-    // {
+     {
        id: 'zerrtech',
        level: 'gold',
        url: 'https://www.zerrtech.com/',
