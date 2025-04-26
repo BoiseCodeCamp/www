@@ -6,7 +6,7 @@ import collage from './assets/img/codecamp-collage.png'
 // NOTE AppState is a reactive object to contain app level data
 export const AppState = reactive({
   STORAGE_KEY: 'BOISECODECAMP25',
-  SESSIONIZE_KEY: 'ac6en2ni',
+  SESSIONIZE_KEY: 'ud5iskr9',
   cfs: 'https://sessionize.com/boise-code-camp-2025/',
   register: 'https://www.eventbrite.com/e/boise-code-camp-2025-tickets-1099441080869',
   currentYear: "2025",
@@ -23,7 +23,7 @@ export const AppState = reactive({
     {
       title: 'About Boise Code Camp',
       img: aboutImg,
-      description: `Code Camp is a free event for developers, hardware geeks, and the curious to come and learn from their peers. We will have a full day worth of sessions ranging from databases, the latest development languages, mobile technologies, and much more. 
+      description: `Code Camp is a free event for developers, hardware geeks, and the curious to come and learn from their peers. We will have a full day worth of sessions ranging from databases, the latest development languages, mobile technologies, and much more.
 
 We believe that learning is a collective adventure. Our community is comprised of seasoned mentors and eager learners. Forge connections, ask questions, and collaborate in presentations, fostering an environment where everyone contributes to the collective learning experience.`
     },
