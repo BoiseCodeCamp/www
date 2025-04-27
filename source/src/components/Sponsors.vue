@@ -54,9 +54,9 @@ export default {
     sponsorMap() {
       return {
         venue: this.venue,
-        platinums: this.platinums,
-        golds: this.golds,
-        silvers: this.silvers,
+        platinum: this.platinums,
+        gold: this.golds,
+        silver: this.silvers,
         community: this.community,
         friends: this.friends,
       };
@@ -94,14 +94,14 @@ export default {
 }
 
 
-.golds .sponsor img {
-  height: 150px;
-  width: 150px;
+.gold .sponsor img {
+  height: 350px;
+  width: 350px;
 }
 
-.platinums .sponsor img {
-  height: 200px;
-  width: 200px;
+.platinum .sponsor img {
+  height: 400px;
+  width: 400px;
 }
 
 .friends img {
