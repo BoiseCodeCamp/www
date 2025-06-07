@@ -5,7 +5,10 @@
         <div class="col offset-lg-1 col-lg-4">
           <div class="text-light">
             <img class="img-fluid mb-3" src="../assets/img/codecamp-words.png" alt="codecamp words" />
-            <h3 class="text-shadow mt-3">
+            <h3 class="text-shadow mt-3" v-if="event.tbaTeaser">
+              {{ event.tbaTeaser }}
+            </h3>
+            <h3 class="text-shadow mt-3" v-else>
               {{ event.date }}
               <span class="ms-md-3 me-md-3">|</span>
               {{ event.location }}
