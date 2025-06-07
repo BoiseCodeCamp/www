@@ -8,9 +8,10 @@ export const AppState = reactive({
   STORAGE_KEY: 'BOISECODECAMP25',
   SESSIONIZE_KEY: 'ud5iskr9',
   cfs: 'https://sessionize.com/boise-code-camp-2025/',
-  register: 'https://www.eventbrite.com/e/boise-code-camp-2025-tickets-1099441080869',
+  register: '',
   currentYear: "2025",
   event: {
+    tbaTeaser: "May 2026",
     name: "Boise CodeCamp",
     date: "May 3",
     dTime: new Date("2025-05-03 8:30"),
@@ -151,6 +152,7 @@ Diversity drives innovation. Our community embraces individuals from all walks o
   },
   speaker: null,
   venue: {
+    tba: true,
     name: "CWI",
     address: "1360 S. Eagle Flight Way, Boise, ID 83709",
     map: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2896.762383429122!2d-116.27685068448267!3d43.57536197912313!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x54ae5f7b1b4f6b8b%3A0x9f8c6c1b8b4a9c2!2sCodeWorks!5e0!3m2!1sen!2sus!4v1631196993718!5m2!1sen!2sus",

@@ -31,8 +31,10 @@
       <div class="row">
         <RegisterButton title="Doesn't this sound great? Reserve your spot now!" />
       </div>
-      <hr />
-      <Venue />
+      <div v-if="!venue.tba">
+        <hr />
+        <Venue />
+      </div>
 
       <div class="row mb-5 home-sponsors" v-if="sponsors.length">
         <hr />
@@ -96,7 +98,8 @@ import { AppState } from '../AppState.js';
 export default {
   setup() {
     return {
-      sponsors: computed(() => AppState.sponsors)
+      sponsors: computed(() => AppState.sponsors),
+      venue: computed(() => AppState.venue)
     };
   },
 };
