@@ -5,17 +5,17 @@ import collage from './assets/img/codecamp-collage.png'
 
 // NOTE AppState is a reactive object to contain app level data
 export const AppState = reactive({
-  STORAGE_KEY: 'BOISECODECAMP25',
-  SESSIONIZE_KEY: 'ud5iskr9',
-  cfs: 'https://sessionize.com/boise-code-camp-2025/',
-  register: 'https://www.eventbrite.com/e/boise-code-camp-2025-tickets-1099441080869',
-  currentYear: "2025",
+  STORAGE_KEY: 'BOISECODECAMP26',
+  SESSIONIZE_KEY: 'wmofnr16',
+  cfs: 'https://sessionize.com/boise-code-camp-2026/',
+  //register: 'https://www.eventbrite.com/e/copy-of-boise-code-camp-2026-tickets-1976644058589',
+  currentYear: "2026",
   event: {
     name: "Boise CodeCamp",
-    date: "May 3",
-    dTime: new Date("2025-05-03 8:30"),
-    location: "Boise, Id",
-    venue: "CodeWorks",
+    date: "May 2",
+    dTime: new Date("2026-05-02 9:00"),
+    location: "Boise, ID",
+    venue: "CWI Pintail Building / ADA Campus",
     address: "1360 S. Eagle Flight Way, Boise, ID 83709",
     snippet: 'Code Camp is a free event for developers, hardware geeks, and the curious to come and learn from their peers. Sessions range from native languages to the clouds and much more.'
   },
@@ -96,13 +96,6 @@ Diversity drives innovation. Our community embraces individuals from all walks o
     //   name: 'College of Western Idaho',
     //   logo: 'https://cwi.edu/sites/all/themes/huckleberry/images/cwi_footer_logo.png'
     // },
-     {
-       id: 'zerrtech',
-       level: 'gold',
-       url: 'https://www.zerrtech.com/',
-       name: 'Zerrtech',
-       logo: 'https://www.zerrtech.com/static/08b35ac6b1ef17f2c898773b2403c98d/fbaa7/header-logo.webp'
-     },
     {
       id: 'shooting-trio',
       level: 'community',
@@ -110,20 +103,20 @@ Diversity drives innovation. Our community embraces individuals from all walks o
       name: 'Shooting Trio',
       logo: '/img/shooting-trio.webp'
     },
-    {
-      id: 'codeworks',
-      level: 'community',
-      url: 'https://boisecodeworks.com/',
-      name: 'CodeWorks',
-      logo: 'https://bcw.blob.core.windows.net/public/img/8600856373152463'
-    },
-    {
-      id: 'jetbrains',
-      level: 'community',
-      url: 'https://www.jetbrains.com/',
-      name: 'JetBrains',
-      logo: 'https://resources.jetbrains.com/storage/products/company/brand/logos/jetbrains.svg'
-    },
+    // {
+    //   id: 'codeworks',
+    //   level: 'community',
+    //   url: 'https://boisecodeworks.com/',
+    //   name: 'CodeWorks',
+    //   logo: 'https://bcw.blob.core.windows.net/public/img/8600856373152463'
+    // },
+    // {
+    //   id: 'jetbrains',
+    //   level: 'community',
+    //   url: 'https://www.jetbrains.com/',
+    //   name: 'JetBrains',
+    //   logo: 'https://resources.jetbrains.com/storage/products/company/brand/logos/jetbrains.svg'
+    // },
   ],
   sessions: [],
   speakers: [],
