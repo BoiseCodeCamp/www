@@ -36,7 +36,7 @@
 
       <div class="row mb-5 home-sponsors" v-if="sponsors.length">
         <hr />
-        <div class="col-lg-10">
+        <div class="col-lg-10 m-auto">
           <div class="h1 mt-3">
             <div>
               Thank you Sponsors
@@ -63,7 +63,7 @@
 
     <section class="container-fluid">
       <div class="row my-5 ms-lg-3">
-        <div class="col-lg-8 offset-lg-1">
+        <div class="col-lg-8 m-auto">
           <h2>Register Today and Code with Us!</h2>
           <p>
             Ready to embark on a whirlwind coding adventure? Register for CodeCamp Community's one-day extravaganza and

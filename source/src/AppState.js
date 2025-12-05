@@ -14,8 +14,8 @@ export const AppState = reactive({
     name: "Boise CodeCamp",
     date: "May 2",
     dTime: new Date("2026-05-02 9:00"),
-    location: "Boise, Id",
-    venue: "CodeWorks",
+    location: "Boise, ID",
+    venue: "CWI Pintail Building / ADA Campus",
     address: "1360 S. Eagle Flight Way, Boise, ID 83709",
     snippet: 'Code Camp is a free event for developers, hardware geeks, and the curious to come and learn from their peers. Sessions range from native languages to the clouds and much more.'
   },
