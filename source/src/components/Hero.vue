@@ -1,23 +1,21 @@
 <template>
   <div class="hero">
-    <header class="container-fluid bg-dark p-5">
-      <div class="row h-100 align-items-center text-shadow">
-        <div class="col offset-lg-1 col-lg-4">
-          <div class="text-light">
-            <img class="img-fluid mb-3" src="../assets/img/codecamp-words.png" alt="codecamp words" />
-            <h3 class="text-shadow mt-3">
-              {{ event.date }}
-              <span class="ms-md-3 me-md-3">|</span>
-              {{ event.location }}
-            </h3>
-            <div class="cta mt-3" v-if="register">
-              <a :href="register" target="_blank"  class="btn btn-lg btn-outline-info">
-                <span class="me-2">Register Now</span>
-                <small>
-                  <i class="mdi  mdi-chevron-right"></i>
-                </small>
-              </a>
-            </div>
+    <header class="d-flex align-items-center bg-dark p-5">
+      <div class="offset-lg-1 text-shadow mt-3 py-5">
+        <div class="text-light">
+          <img class="img-fluid mb-3" src="../assets/img/codecamp-words.png" alt="codecamp words" />
+          <h3 class="text-shadow mt-3">
+            {{ event.date }}
+            <span class="ms-md-3 me-md-3">|</span>
+            {{ event.location }}
+          </h3>
+          <div class="cta mt-3" v-if="register">
+            <a :href="register" target="_blank"  class="btn btn-lg btn-outline-info">
+              <span class="me-2">Register Now</span>
+              <small>
+                <i class="mdi  mdi-chevron-right"></i>
+              </small>
+            </a>
           </div>
         </div>
       </div>
@@ -59,7 +57,7 @@ header {
   background-image: url(../assets/img/codecamp-header-bg.png);
   background-position: center;
   background-size: cover;
-  height: 87vh;
+  min-height: 87vh;
   font-size: 18pt;
 }
 </style>
