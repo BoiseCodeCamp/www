@@ -8,7 +8,7 @@ export const AppState = reactive({
   STORAGE_KEY: 'BOISECODECAMP26',
   SESSIONIZE_KEY: 'wmofnr16',
   cfs: 'https://sessionize.com/boise-code-camp-2026/',
-  //register: 'https://www.eventbrite.com/e/copy-of-boise-code-camp-2026-tickets-1976644058589',
+  register: 'https://www.eventbrite.com/e/copy-of-boise-code-camp-2026-tickets-1976644058589',
   currentYear: "2026",
   event: {
     name: "Boise CodeCamp",
