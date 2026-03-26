@@ -24,18 +24,29 @@
         </sup>
       </div>
     </div>
+    <div v-if="session.speakers?.length" class="text-muted small px-1">
+      <i class="mdi mdi-account me-1"></i>{{ speakerNames }}
+    </div>
     <div class="collapse" :id="'session-details-' + session.id">
-      <p class="m-0 fs-6">{{ session.description }}</p>
+      <p class="m-0 fs-6" style="white-space: pre-line">{{ session.description }}</p>
     </div>
   </div>
 </template>
 
 <script>
+import { computed } from 'vue';
+import { AppState } from '../AppState.js';
 
 export default {
   props: ["session"],
   setup(props) {
     return {
+      speakerNames: computed(() =>
+        props.session.speakers
+          ?.map(id => AppState.speakers.find(s => s.id === id)?.fullName)
+          .filter(Boolean)
+          .join(', ')
+      ),
       time(str) {
         if (!str) { return '' }
         try {

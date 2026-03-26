@@ -5,7 +5,7 @@
       <div class="col-12 mb-5">
         <h2>Speakers</h2>
         <p class="m-0">
-          <a class="border-top pt-2 small" href="/schedule" target="_blank" rel="noopener" title="Schedule">Schedule</a>
+          <router-link class="border-top pt-2 small" :to="{ name: 'Sessions' }" title="Sessions">Sessions</router-link>
         </p>
       </div>
       <div class="col-12 speaker-deck">
@@ -125,7 +125,7 @@ export default {
     return {
       speakers: computed(() => AppState.speakers),
       speaker: computed(() => AppState.speaker),
-      sessions: computed(() => AppState.sessions[0]?.sessions.filter(s => s.speakers?.find(ss => ss.id == AppState.speaker?.id))),
+      sessions: computed(() => AppState.sessions.filter(s => s.speakers?.includes(AppState.speaker?.id))),
       cfs: AppState.cfs
     };
   }

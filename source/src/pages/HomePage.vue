@@ -26,6 +26,14 @@
       <Experience />
     </section>
 
+    <section class="container-fluid px-lg-5">
+      <div class="row">
+        <div class="col-12">
+          <SessionizeEmbed src="https://sessionize.com/api/v2/wmofnr16/view/SpeakerWall" />
+        </div>
+      </div>
+    </section>
+
     <section class="container">
 
       <div class="row">

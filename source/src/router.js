@@ -19,6 +19,16 @@ const routes = [
     path: '/thank-you',
     name: 'ThankYou',
     component: loadPage('ThankYouPage')
+  },
+  {
+    path: '/speakers',
+    name: 'Speakers',
+    component: loadPage('SpeakersPage')
+  },
+  {
+    path: '/sessions',
+    name: 'Sessions',
+    component: loadPage('SessionsPage')
   }
 ]
 

@@ -1,6 +1,6 @@
 <template>
   <nav class="navbar fixed-top navbar-expand-lg transition p-3"
-    :class="scrolled ? 'navbar-light bg-light z-depth' : 'navbar-dark'">
+    :class="scrolled ? 'navbar-light bg-light z-depth' : 'navbar-dark bg-theme-dark'">
     <router-link class="d-flex align-items-center" to="/">
       <img v-show="!scrolled" height="55" src="../assets/img/invert.png" alt="Boise Code Camp Logo"
         class="drop-shadow" />
@@ -27,6 +27,12 @@
             >Dashboard
           </router-link>
         </li> -->
+        <li class="nav-item">
+          <router-link class="nav-link text-uppercase" :to="{ name: 'Speakers' }">Speakers</router-link>
+        </li>
+        <li class="nav-item">
+          <router-link class="nav-link text-uppercase" :to="{ name: 'Sessions' }">Sessions</router-link>
+        </li>
         <li class="nav-item" v-if="attend">
           <a :href="attend" target="_blank"
             rel="noopener" title="call for speakers" class="nav-link text-uppercase">
