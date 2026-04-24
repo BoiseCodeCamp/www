@@ -1,0 +1,40 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Navbar from '../components/Navbar.vue';
+import HeroSm from '../components/HeroSm.vue';
+import RegisterButton from '../components/RegisterButton.vue';
+import Reminders from '../components/Reminders.vue';
+import Countdown from '../components/Countdown.vue';
+import Foot from '../components/Foot.vue';
+---
+
+<Layout title="Register | Boise Code Camp 2026">
+  <section class="register">
+    <Navbar client:load />
+    <HeroSm client:load />
+    <RegisterButton class="mt-0 mb-0" show-form title="Register for Code Camp" client:load />
+    <div class="container-fluid pt-5 pl-lg-5 pr-lg-5 bg-white">
+      <div class="row">
+        <div class="col-12 col-lg-10 m-auto">
+          <article class="content-item page">
+            <h1 class="page-title">Don't hesitate, Commit</h1>
+            <p><strong>Get your tickets before they are gone!</strong></p>
+            <p>
+              Tickets for Boise Code Camp are limited to 200 people so be sure to get yours and
+              secure your seat.
+            </p>
+          </article>
+        </div>
+      </div>
+
+      <Reminders client:load />
+
+      <div class="row">
+        <div class="col-12 col-lg-10 m-auto">
+          <Countdown client:load />
+        </div>
+      </div>
+    </div>
+    <Foot class="mt-0" client:load />
+  </section>
+</Layout>
