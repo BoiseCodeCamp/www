@@ -1,0 +1,3 @@
+[submodule "boisecodecamp.github.io"]
+	path = boisecodecamp.github.io
+	url = https://github.com/jimmckeeth/boisecodecamp.github.io.git

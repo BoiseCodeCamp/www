@@ -1,0 +1,42 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Navbar from '../components/Navbar.vue';
+import HeroSm from '../components/HeroSm.vue';
+import Reminders from '../components/Reminders.vue';
+import Foot from '../components/Foot.vue';
+import { AppState } from '../AppState.js';
+
+const registered = AppState.registered;
+---
+
+<Layout title="Thank You | Boise Code Camp 2026">
+  <section class="register">
+    <Navbar client:load />
+    <HeroSm class="hero-tiny" client:load />
+    <div class="container-fluid pt-5 pl-lg-5 pr-lg-5 bg-white">
+      <div class="row">
+        <div class="col-12 col-lg-10 m-auto">
+          <article class="content-item page">
+            <p><b>BoiseCodeCamp 2026</b></p>
+            <h1 class="page-title">Hooray! Your Spot is Saved!</h1>
+            <p><strong>Be sure to save the date</strong></p>
+
+            <p>We just wanted to take a quick second and thank you for signing up to attend BoiseCodeCamp this year. Our
+              community is what makes us great and you are a part of that!</p>
+
+            <p>Thank you for registering { registered?.name } you will receive a confirmation email shortly</p>
+
+            <Reminders client:load />
+          </article>
+        </div>
+      </div>
+    </div>
+    <Foot class="mt-0" client:load />
+  </section>
+</Layout>
+
+<style>
+.hero-tiny{
+  max-height: 40vh;
+}
+</style>

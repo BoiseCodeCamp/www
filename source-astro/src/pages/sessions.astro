@@ -1,0 +1,16 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Navbar from '../components/Navbar.vue';
+import SessionList from '../components/SessionList.vue';
+import Foot from '../components/Foot.vue';
+---
+
+<Layout title="Sessions | Boise Code Camp 2026">
+  <div class="bg-white">
+    <Navbar client:load />
+    <section class="container pt-5 mt-5">
+      <SessionList client:load />
+    </section>
+    <Foot client:load />
+  </div>
+</Layout>

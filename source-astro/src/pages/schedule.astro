@@ -1,0 +1,31 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Navbar from '../components/Navbar.vue';
+import ScheduleGrid from '../components/ScheduleGrid.vue';
+import Foot from '../components/Foot.vue';
+
+// This is a standard Astro page. It MUST include the Navbar and Foot.
+---
+
+<Layout title="Schedule | Boise Code Camp 2026">
+  <div class="bg-white">
+    <Navbar client:load />
+    
+    <main class="container pt-5 mt-5">
+      <div class="py-4">
+        <h1 class="mb-4 text-dark">Event Schedule</h1>
+        <hr />
+        <!-- We use client:only="vue" to ensure this complex grid ONLY renders on the client where AppState is populated -->
+        <ScheduleGrid client:only="vue" />
+      </div>
+    </main>
+
+    <Foot client:load />
+  </div>
+</Layout>
+
+<style>
+  main {
+    min-height: 70vh;
+  }
+</style>

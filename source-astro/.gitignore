@@ -1,0 +1,28 @@
+# Dependencies
+node_modules/
+
+# Build output
+dist/
+
+# Logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# OS-specific
+.DS_Store
+
+# Editor-specific
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Astro-specific
+.astro/
+
+# Playwright
+test-results/
+playwright-report/
+blob-report/
+playwright/.cache/

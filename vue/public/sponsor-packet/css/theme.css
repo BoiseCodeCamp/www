@@ -1,0 +1,289 @@
+.navigation {
+  background-color: #ffffff !important;
+}
+.navbutton {
+  background-color: #ffffff !important;
+  color: #333333 !important;
+}
+.navbutton:hover {
+  background: #f7f8fa !important;
+  color: #333333 !important;
+}
+.active,
+.active:hover {
+  border-left: 7px solid #21252f;
+  color: #21252f;
+  background-color: #e3e6ed !important;
+}
+.menu-text {
+  color: #333333;
+}
+.btn-create-page {
+  color: #494c54 !important;
+  border: 2px solid #494c54 !important;
+}
+.btn-library-page {
+  color: #494c54 !important;
+}
+.edit {
+  background-image: url(../img/proposal-icons/tab-move-dark.png);
+  background-size: 20px 30px;
+  background-repeat: no-repeat;
+  background-position: left top;
+  padding: 10px 10px 0px 10px;
+  float: right;
+  margin-top: -6px;
+  margin-right: -12px;
+  margin-left: 7px;
+  opacity: 0.7;
+  transition: all 0.3s ease;
+  cursor: move;
+}
+.edit:hover {
+  opacity: 1;
+}
+.edit:active {
+  opacity: 0.7;
+}
+.save-page {
+  background-image: url(../img/proposal-icons/tab-save-dark.png);
+  background-size: 20px 20px;
+  background-repeat: no-repeat;
+  background-position: left top;
+  padding: 10px 10px 0px 10px;
+  float: right;
+  margin-right: 2px;
+  opacity: 0.7;
+  transition: all 0.3s ease;
+}
+.save-page:hover {
+  opacity: 1;
+}
+.save-page:active {
+  opacity: 0.7;
+}
+
+.printable-title {
+  text-transform: capitalize;
+  font-family: Open Sans, sans-serif !important;
+  font-weight: 300 !important;
+  line-height: 1.5em !important;
+  font-size: 1.3em;
+}
+
+div.editable blockquote {
+  font-family: "Work Sans", sans-serif !important;
+  font-size: 1.4em;
+  font-weight: 300 !important;
+  line-height: 1.5em !important;
+  color: #333333;
+  border-left: 2px solid;
+  padding-left: 20px;
+  letter-spacing: -0.03em;
+  margin: 0;
+  white-space: pre; /* CSS 2.0 */
+  white-space: pre-wrap; /* CSS 2.1 */
+  white-space: pre-line; /* CSS 3.0 */
+  white-space: -pre-wrap; /* Opera 4-6 */
+  white-space: -o-pre-wrap; /* Opera 7 */
+  white-space: -moz-pre-wrap; /* Mozilla */
+  white-space: -hp-pre-wrap; /* HP Printers */
+  word-wrap: break-word; /* IE 5+ */
+}
+
+div.custom-block-colour blockquote {
+  font-family: "Work Sans", sans-serif !important;
+  font-size: 1.4em;
+  font-weight: 300 !important;
+  line-height: 1.5em !important;
+  letter-spacing: -0.03em;
+  border-left: 2px solid;
+  padding-left: 20px;
+  margin: 0;
+  white-space: pre; /* CSS 2.0 */
+  white-space: pre-wrap; /* CSS 2.1 */
+  white-space: pre-line; /* CSS 3.0 */
+  white-space: -pre-wrap; /* Opera 4-6 */
+  white-space: -o-pre-wrap; /* Opera 7 */
+  white-space: -moz-pre-wrap; /* Mozilla */
+  white-space: -hp-pre-wrap; /* HP Printers */
+  word-wrap: break-word; /* IE 5+ */
+}
+
+/* Text Area Edit and View */
+div.text-output {
+  padding-top: 5px;
+  padding-bottom: 15px;
+  font-family: "Open Sans", sans-serif !important;
+  line-height: 1.5em !important;
+  font-size: 1.3em !important;
+  font-weight: 300 !important;
+  outline: none;
+  color: #333333 !important;
+}
+div.quote-output {
+  padding-top: 5px;
+  font-family: "Open Sans", sans-serif !important;
+  line-height: 1.5em !important;
+  font-size: 1.3em !important;
+  font-weight: 300 !important;
+  outline: none;
+}
+
+div.editable h1,
+div.quote-output h1 {
+  font-family: "Work Sans", sans-serif !important;
+  font-size: 2.4em !important;
+  font-weight: 300 !important;
+  letter-spacing: -0.02em !important;
+  line-height: 1.1em !important;
+  color: #333333 !important;
+}
+div.editable h2 {
+  font-family: "Work Sans", sans-serif !important;
+  font-size: 2em !important;
+  font-weight: 300 !important;
+  letter-spacing: -0.02em !important;
+  line-height: 1.5em !important;
+  color: #333333 !important;
+}
+div.editable h3 {
+  font-family: "Work Sans", sans-serif !important;
+  line-height: 1.5em !important;
+  font-size: 1.4em !important;
+  font-weight: 300 !important;
+  color: #333333 !important;
+}
+
+div.custom-block-text h1,
+div.custom-block-colour h1 {
+  font-family: "Work Sans", sans-serif !important;
+  font-size: 2.4em !important;
+  font-weight: 300 !important;
+  letter-spacing: -0.02em !important;
+  line-height: 1.1em !important;
+}
+div.custom-block-text h2,
+div.custom-block-colour h2 {
+  font-family: "Work Sans", sans-serif !important;
+  font-size: 2em !important;
+  font-weight: 300 !important;
+  letter-spacing: -0.02em !important;
+  line-height: 1.5em !important;
+}
+div.custom-block-text h3,
+div.custom-block-colour h3 {
+  font-family: "Work Sans", sans-serif !important;
+  line-height: 1.5em !important;
+  font-size: 1.4em !important;
+  font-weight: 300 !important;
+}
+
+/* Text Area Edit */
+div.editor-holder div.text-output:hover {
+  cursor: text;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+  transition: background-color 0.2s ease;
+  width: 100%;
+}
+
+.thanks-text {
+  text-align: left;
+  color: #333333 !important;
+  margin-bottom: 30px;
+  font-family: "Open Sans", sans-serif !important;
+  line-height: 1.5em !important;
+  font-size: 1.3em !important;
+  font-weight: 300 !important;
+}
+.thanks-text h1 {
+  font-family: "Work Sans", sans-serif !important;
+  font-size: 2.4em !important;
+  font-weight: 300 !important;
+  letter-spacing: -0.02em !important;
+  line-height: 1.1em !important;
+  color: #333333 !important;
+}
+.thanks-text h2 {
+  font-family: "Work Sans", sans-serif !important;
+  font-size: 2em !important;
+  font-weight: 300 !important;
+  letter-spacing: -0.02em !important;
+  line-height: 1.5em !important;
+  color: #333333 !important;
+}
+.thanks-text h3 {
+  font-family: "Work Sans", sans-serif !important;
+  line-height: 1.5em !important;
+  font-size: 1.4em !important;
+  font-weight: 300 !important;
+  color: #333333 !important;
+}
+
+/* Payment page */
+.panel-thankyou {
+  font-family: "Open Sans", sans-serif !important;
+  line-height: 1.5em !important;
+  font-size: 1.3em !important;
+  font-weight: 300 !important;
+  color: #333333 !important;
+}
+.panel-thankyou h1 {
+  font-family: "Work Sans", sans-serif !important;
+  font-size: 2.4em !important;
+  font-weight: 300 !important;
+  letter-spacing: -0.02em !important;
+  line-height: 1.1em !important;
+  color: #333333 !important;
+}
+.panel-thankyou h2 {
+  font-family: "Work Sans", sans-serif !important;
+  font-size: 2em !important;
+  font-weight: 300 !important;
+  letter-spacing: -0.02em !important;
+  line-height: 1.5em !important;
+  color: #333333 !important;
+}
+.panel-thankyou h3 {
+  font-family: "Work Sans", sans-serif !important;
+  line-height: 1.5em !important;
+  font-size: 1.4em !important;
+  font-weight: 300 !important;
+  color: #333333 !important;
+}
+
+/* Print and Forward */
+.btn-toolbar a {
+  width: 50%;
+  float: left;
+  text-align: center;
+}
+.btn-toolbar a:hover {
+  background: rgba(255, 255, 255, 0.1);
+}
+.btn-toolbar a:active {
+  background: rgba(255, 255, 255, 0.2);
+}
+
+@media only screen and (max-width: 768px) {
+  div.custom-block-text h1,
+  div.custom-block-colour h1 {
+    font-size: 1.8em !important;
+  }
+  div.custom-block-text h2,
+  div.custom-block-colour h2 {
+    font-size: 1.2em !important;
+  }
+  div.editable h1,
+  div.quote-output h1 {
+    font-size: 1.8em !important;
+  }
+  div.editable h2 {
+    font-size: 1.2em !important;
+  }
+}
+
+span{
+  pointer-events: none;
+}
